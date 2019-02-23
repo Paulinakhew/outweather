@@ -1,17 +1,14 @@
-
-
-.bg
-{
-  z-index: -1;
-  position: absolute;
-  margin: auto;
-  text-align:center;
-  display:block;
-  max-width: 100%;
-  height:auto;
+.bg {
+	z-index: -1;
+	position: absolute;
+	text-align:center;
+	display:block;
+	max-width: 100%;
+	height:auto;
 }
 
-body {
-  background-image: url("images/menu_top.png");
-  background-color: #cccccc;
+.get-started {
+	width: 50%;
+	margin:auto;
+	
 }
