@@ -8,7 +8,12 @@
 }
 
 .get-started {
-	width: 50%;
-	margin:auto;
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
 	
+}
+
+p {
+	color:blue;	
 }
