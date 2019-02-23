@@ -12,6 +12,10 @@ def website():
     else:
         return render_template('index.html', result='hello')
 
+@app.route('/weather', methods=['GET'])
+def weather():
+    if request.method=="GET":
+        return render_template('weather.html')
 
 if __name__ == '__main__':
     app.run(debug=True)
