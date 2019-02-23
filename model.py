@@ -14,6 +14,5 @@ class WeatherInfo:
             hourlyWeather[time].append({"Weather": weatherData.list[x].weather[0].main})
             hourlyWeather[time].append({"Weather Details": weatherData.list[x].weather[0].description})
             hourlyWeather[time].append({"Wind Speed": weatherData.list[x].wind.speed})
-        
         return hourlyWeather
 
