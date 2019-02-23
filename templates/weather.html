@@ -10,6 +10,16 @@
             </p>
         <button type="button">
             <a href='/mainmenu'>Click here to go back to the main menu!</a>
+
+            <div class="my-3 py-3">
+                    <h2 class="display-5">Symbol Lookup</h2>
+                    <form action="/weather" method="post">
+                        <input name="city" placeholder="city">            
+                        <input type="submit">
+                    </form>
+                    <h2>{{result}}</h2>
+                    </p>
+                </div>
         </button>
     </body>
 </html>
