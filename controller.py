@@ -8,9 +8,9 @@ app = Flask(__name__)
 @app.route('/mainmenu',methods=['GET'])
 def website():
     if request.method=="GET":
-        return render_template('index.html', result='hello')
+        return render_template('mainmenu.html', result='hello')
     else:
-        return render_template('index.html', result='hello')
+        return render_template('mainmenu.html', result='hello')
 
 @app.route('/weather', methods=['GET'])
 def weather():
