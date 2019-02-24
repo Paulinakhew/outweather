@@ -61,13 +61,44 @@
                     <h4>{{coldBottoms[randomInt]}}</h4>
                 </div>
             {% endif %}
-                <div class = "container bottoms">
 
-                </div>
+            <!--- SEPERATING SECTIONS  -->
 
+            {% if result["Temperature"]>25 %}
                 <div class = "container accessories">
-
+                    <h1>Accessories</h1>
+                    <h4>{{hotAccessories[randomInt]}}</h4>
                 </div>
+            {% elif result["Temperature"] > 10 and result["Temperature"] < 25 %}
+                <div class = "container accessories">
+                    <h1>Accessories</h1>
+                    <h4>{{mildAccessories[randomInt]}}</h4>
+                </div>
+            {% elif result["Temperature"] < 10 %}
+                <div class = "container accessories">
+                    <h1>Accessories</h1>
+                    <h4>{{coldAccessories[randomInt]}}</h4>
+                </div>
+            {% endif %}
+
+            <!--- SEPERATING SECTIONS  -->
+
+            {% if result["Temperature"]>25 %}
+                <div class = "container footwear">
+                    <h1>Footwear</h1>
+                    <h4>{{hotFootwear[randomInt]}}</h4>
+                </div>
+            {% elif result["Temperature"] > 10 and result["Temperature"] < 25 %}
+                <div class = "container footwear">
+                    <h1>Footwear</h1>
+                    <h4>{{mildFootwear[randomInt]}}</h4>
+                </div>
+            {% elif result["Temperature"] < 10 %}
+                <div class = "container footwear">
+                    <h1>Footwear</h1>
+                    <h4>{{coldFootwear[randomInt]}}</h4>
+                </div>
+            {% endif %}
 
                 <div class = "container footwear">
 

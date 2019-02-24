@@ -47,7 +47,7 @@ def weather():
         hot_accessories = ["Fan", "Water Bottle"]
         hot_bottoms = ["Short Skirt", "Cargo Shorts", "Jean Shorts", "Trackpants", ""]
 
-        return render_template('outfits.html', city = submitted_city, result = result, randomInt = random_num, coldFootware = cold_footwear,
+        return render_template('outfits.html', city = submitted_city, result = result, randomInt = random_num, coldFootwear = cold_footwear,
         coldBottoms = cold_bottoms, coldTop = cold_top, coldAccessories = cold_accessories,
         mildFootwear = mild_footwear, mildTop = mild_top, mildAccessories = mild_accessories, mildBottoms = mild_bottoms,
         precipFootwear = snowRain_footwear, precipTop = snowRain_top, precipAccessories = snowRain_accessories, precipBottom = snowRain_bottoms,
