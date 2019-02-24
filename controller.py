@@ -19,16 +19,13 @@ def weather():
     if request.method=="GET":
         return render_template('weather.html')
     else:
-<<<<<<< HEAD
         global submitted_city
         submitted_city = request.form['city']
         return render_template('weather.html')
-=======
         #global submitted_city
         submitted_city = request.form['city']
         result = m.getWeather(submitted_city)
         return render_template('outfits.html', city = submitted_city, result = result)
->>>>>>> b1d08d9919909f4fb0e87bb665f14488ce6c3b68
 
 @app.route('/outfits', methods=['GET', 'POST'])
 def outfits():
