@@ -65,6 +65,9 @@
     .font-60 {
         font-size: 60px;
     }
+    .weather_icon{
+        fill:white;
+    }
     </style>
 </head>
 
@@ -104,8 +107,9 @@
     </br>
 
     <div class = "outfit">
-            {% if result["Temperature"]>25 %}
                 <div class = "container top">
+            {% if result["Temperature"]>25 %}
+
                     <h1>Top</h1>
                     <h4>{{hotTop[randomInt]}}</h4>
                 </div>
@@ -118,13 +122,29 @@
                 <div class = "container top">
                     <h1>Top</h1>
                     <h4>{{coldTop[randomInt]}}</h4>
-                </div>
             {% endif %}
+            {% for style in jacketsIcon %}
+                {% if hotBottoms[randomInt] == style %}
+                    <img class = "jacket" src = "static/images/jacket.png">
+                {% endif %}
+            {% endfor %}
+            {% for style in tShirtIcon %}
+                {% if hotBottoms[randomInt] == style %}
+                    <img class = "t-shirt" src = "static/images/t-shirt.png">
+                {% endif %}
+            {% endfor %}
+            {% for style in longSleeveIcon %}
+                {% if hotBottoms[randomInt] == style %}
+                    <img class = "long-sleeve-shirt" src = "static/images/long-sleeve.png">
+                {% endif %}
+            {% endfor %}
+                </div>
 
             <!--- SEPERATING SECTIONS  -->
 
-            {% if result["Temperature"]>25 %}
                 <div class = "container bottoms">
+            {% if result["Temperature"]>25 %}
+
                     <h1>Bottoms</h1>
                     <h4>{{hotBottoms[randomInt]}}</h4>
                 </div>
@@ -137,14 +157,25 @@
                 <div class = "container bottoms">
                     <h1>Bottoms</h1>
                     <h4>{{coldBottoms[randomInt]}}</h4>
-                </div>
             {% endif %}
+            {% for style in fullBottomsIcon %}
+                {% if hotBottoms[randomInt] == style %}
+                    <img class = "full-bottoms" src = "static/images/full-length.png">
+                {% endif %}
+            {% endfor %}
+            {% for style in halfBottomsIcon %}
+                {% if hotBottoms[randomInt] == style %}
+                    <img class = "half-bottoms" src = "static/images/half-length.png">
+                {% endif %}
+            {% endfor %}
+            </div>
 
             
             <!--- SEPERATING SECTIONS  -->
 
-            {% if result["Temperature"]>25 %}
                 <div class = "container accessories">
+            {% if result["Temperature"]>25 %}
+
                     <h1>Accessories</h1>
                     <h4>{{hotAccessories[randomInt]}}</h4>
                 </div>
@@ -157,13 +188,14 @@
                 <div class = "container accessories">
                     <h1>Accessories</h1>
                     <h4>{{coldAccessories[randomInt]}}</h4>
-                </div>
             {% endif %}
+            <img class = "accessories" src = "">
+                </div>
 
             <!--- SEPERATING SECTIONS  -->
 
-            {% if result["Temperature"]>25 %}
                 <div class = "container footwear">
+            {% if result["Temperature"]>25 %}
                     <h1>Footwear</h1>
                     <h4>{{hotFootwear[randomInt]}}</h4>
                 </div>
@@ -176,12 +208,27 @@
                 <div class = "container footwear">
                     <h1>Footwear</h1>
                     <h4>{{coldFootwear[randomInt]}}</h4>
-                </div>
             {% endif %}
-
-                <div class = "container footwear">
-
+            {% for style in bootsIcon %}
+                {% if hotBottoms[randomInt] == style %}
+                    <img class = "boots" src = "static/images/boots.png">
+                {% endif %}
+            {% endfor %}
+            {% for style in sandalsIcon %}
+                {% if hotBottoms[randomInt] == style %}
+                    <img class = "sandals" src = "static/images/sandals.png">
+                {% endif %}
+            {% endfor %}
+            {% for style in joggersIcon %}
+                {% if hotBottoms[randomInt] == style %}
+                    <img class = "joggers" src = "static/images/joggers.png">
+                {% endif %}
+            {% endfor %}
+            {% for style in miscShoes %}
+                {% if hotBottoms[randomInt] == style %}
+                    <img class = "miscellaneous-shoes" src = "static/images/miscShoes.png">
+                {% endif %}
+            {% endfor %}
                 </div>
-
     </div>
 </body>

@@ -120,7 +120,8 @@ def outfits():
         mildFootwear = mild_footwear, mildTop = mild_top, mildAccessories = mild_accessories, mildBottoms = mild_bottoms,
         hotFootwear = hot_footwear, hotTop = hot_top, hotAccessories = hot_accessories, hotBottoms = hot_bottoms, 
         jacketsIcon = jackets, tShirtIcon = t_shirt, longSleeveIcon = long_sleeve_shirt, bootsIcon = boots,
-        joggersIcon = joggers, sandalsIcon = sandals, miscShoes = miscellanouse_shoes, weather = weather)
+        joggersIcon = joggers, sandalsIcon = sandals, miscShoes = miscellanouse_shoes, halfBottomsIcon = half_length,
+        fullBottomsIcon = full_length, weather = weather)
 
 
 
