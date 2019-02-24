@@ -2,12 +2,14 @@
 import requests
 import random
 from datetime import datetime
+from flask_humanize import Humanize
 import model as m
 
 from flask import Flask, render_template, request, redirect, session
 
 app = Flask(__name__)
 
+HUMANIZE_USE_UTC = True
 
 @app.route('/mainmenu',methods=['GET'])
 def website():
