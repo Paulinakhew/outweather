@@ -22,24 +22,56 @@
     </div>
     <div class = "row">
         <h1 class = "col-md-12 text-center">My Outfit</h1>
-    </br>
-    </br>
     </div>
+    </br>
+    </br>
     <div class = "outfit">
-            <div class = "container top">
+            {% if result["Temperature"]>25 %}
+                <div class = "container top">
+                    <h1>Top</h1>
+                    <h4>{{hotTop[randomInt]}}</h4>
+                </div>
+            {% elif result["Temperature"] > 10 and result["Temperature"] < 25 %}
+                <div class = "container top">
+                    <h1>Top</h1>
+                    <h4>{{mildTop[randomInt]}}</h4>
+                </div>
+            {% elif result["Temperature"] < 10 %}
+                <div class = "container top">
+                    <h1>Top</h1>
+                    <h4>{{coldTop[randomInt]}}</h4>
+                </div>
+            {% endif %}
 
-            </div>
+            <!--- SEPERATING SECTIONS  -->
 
-            <div class = "container bottoms">
+            {% if result["Temperature"]>25 %}
+                <div class = "container bottoms">
+                    <h1>Bottoms</h1>
+                    <h4>{{hotBottoms[randomInt]}}</h4>
+                </div>
+            {% elif result["Temperature"] > 10 and result["Temperature"] < 25 %}
+                <div class = "container bottoms">
+                    <h1>Bottoms</h1>
+                    <h4>{{mildBottoms[randomInt]}}</h4>
+                </div>
+            {% elif result["Temperature"] < 10 %}
+                <div class = "container bottoms">
+                    <h1>Bottoms</h1>
+                    <h4>{{coldBottoms[randomInt]}}</h4>
+                </div>
+            {% endif %}
+                <div class = "container bottoms">
 
-            </div>
+                </div>
 
-            <div class = "container accessories">
+                <div class = "container accessories">
 
-            </div>
+                </div>
 
-            <div class = "container footwear">
+                <div class = "container footwear">
 
-            </div>
+                </div>
+
     </div>
 </body>
