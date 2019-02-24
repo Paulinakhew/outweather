@@ -39,7 +39,7 @@ def weather():
         hot_footwear = ["Flip-Flops", "Sandals", "Slides", "Running Shoes", "Slip-On Casual Shoes"]
         hot_top = ["Tank Top", "T-Shirt", "Undershirt"]
         hot_accessories = []
-        hot_bottoms = []
+        hot_bottoms = ["Shorts", "Cargo Shorts", "Jean Shorts", "Trackpants", "3/4 Length Trackpants", ]
 
         return render_template('outfits.html', city = submitted_city, result = result)
     
