@@ -8,12 +8,13 @@ def getWeather(city):
     for x in range(8):
         dateTime = weatherData['list'][x]['dt_txt']
         timeArr = dateTime.rsplit(" ")
+        date = timeArr[0]
         time = timeArr[1]
         if (time == "12:00:00"):
             hourlyWeather["Temperature"] = round((weatherData['list'][x]['main']['temp'] - 273.15), 1)
             hourlyWeather["Weather"] = weatherData['list'][x]['weather'][0]['main']
             hourlyWeather["Weather Details"] = weatherData['list'][x]['weather'][0]['description']
             hourlyWeather["Wind Speed"] = round((weatherData['list'][x]['wind']['speed']),2)
-            hourlyWeather["Date"] = weatherData['list'][x]['dt_txt']
+            hourlyWeather["Date"] = date
     return hourlyWeather
 
