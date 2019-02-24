@@ -73,12 +73,13 @@
         width: 34%;
     }
     .middlecol{
-        width: 33%;
+        width: 30%;
         text-align: center;
     }
     .right1 {
-        width: 33%;
+        width: 30%;
         text-align: center;
+        right:0px;
     }
     .clothes {
         height: 80px;
@@ -99,7 +100,6 @@
     .card1, .card2, .card3, .card4 {
         border-radius: 15px;
     }
-
 
     .font1 {
         font-family: 'Heiti SC';
@@ -138,7 +138,7 @@
     </div>
     <!-- Outfits -->
     <div>
-        <div class="row">
+        <div class="row white-text">
             <div class="left1">
                 <bold><green><h3 class="futura" style="margin: 30px;">My </br>Outfit</h3></green></bold>
             </div>
@@ -286,6 +286,7 @@
                         <h4>{{coldAccessories[randomInt]}}</h4>
                         <img class = "accessories clothes" src = "static/images/accessoriescold.svg">
                 {% endif %}
+                </div>
                 
                 <div class="card4">
                     {% if result["Temperature"]>25 %}
