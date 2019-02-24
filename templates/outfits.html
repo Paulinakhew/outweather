@@ -290,11 +290,17 @@
                         <h4>{{hotAccessories[randomInt]}}</h4>
                 {% elif result["Temperature"] > 10 and result["Temperature"] < 25 %}
                         <h1>Accessories</h1>
-                        <img class = "accessories" src = "static/images/accessoriesmild.svg">
+                        <img class = "accessories clothes" src = "static/images/accessoriesmild.svg">
                         <h4>{{mildAccessories[randomInt]}}</h4>
                 {% elif result["Temperature"] < 10 %}
                         <h1>Accessories</h1>
-                        <img class = "accessories clothes" src = "static/images/accessoriescold.svg">
+                        {% if coldAccessories[randomInt] == "Mittens" or coldAccessories[randomInt] == "Gloves" %}
+                            <img class = "accessories clothes" src = "static/images/mittens.svg">
+                        {% elif coldAccessories[randomInt] == "Hat" or coldAccessories[randomInt] == "Toque" %}
+                            <img class = "accessories clothes" src = "static/images/toque.svg">
+                        {% else %}
+                            <img class = "accessories clothes" src = "static/images/accessoriescold.svg">
+                        {% endif %}
                         <h4>{{coldAccessories[randomInt]}}</h4>
                 {% endif %}
                 </div>
