@@ -73,7 +73,12 @@
         <div class="row">
             <div class="column left">
                 <bold><h3 style="font-size:90px;">{{city| title}}</h3></bold>
-                <img src='https://cdn3.iconfinder.com/data/icons/chubby-weather/403/rain_less-512.png' height="180px" width="180px">
+                {% for state in weather %}
+                    {% if result["Weather"] == state %}
+                        <img class = "weather_icon" src = "{{ "static/images/" ~ state ~ ".svg" }}" height="180px" width="180px">
+                    {% endif %}
+                {% endfor %}
+
                 <h2 style="font-size:80px;">{{result["Temperature"]}}˚C</h2>
             </div>
             <div class="column right">
@@ -97,11 +102,6 @@
     </div>
     </br>
     </br>
-    {% for state in weather %}
-        {% if result["Weather"] == state %}
-            <img class = "weather_icon" src = "{{ "static/images/" ~ state ~ ".svg" }}" >
-        {% endif %}
-    {% endfor %}
 
     <div class = "outfit">
             {% if result["Temperature"]>25 %}
