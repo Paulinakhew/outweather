@@ -65,7 +65,7 @@ def outfits():
         boots = ["Boots", "Hiking Boots", "Uggs", "Leather Shoes"]
         joggers = ["Running Shoes", "Slip-On Casual Shoes"]
         sandals = ["Slides", "Flip-Flops", "Sandals"]
-        miscellanouse_shoes = ["Winter Moccasins", "Dress Shoes", "Heels"]
+        miscellanouse_shoes = ["Winter Moccasins", "Dress Shoes"]
 
         full_length = ["Jeans", "Sweatpants", "Leggings", "Jeggings", "Khakis", "Long Skirt", "Cargo Pants", "Dress Pants", "Trackpants"]
         half_length = ["Short Skirt", "Cargo Shorts", "Jean Shorts", "Athletic Shorts"]
