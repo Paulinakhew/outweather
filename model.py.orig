@@ -14,6 +14,9 @@ def getWeather(city):
             hourlyWeather["Weather"] = weatherData['list'][x]['weather'][0]['main']
             hourlyWeather["Weather Details"] = weatherData['list'][x]['weather'][0]['description']
             hourlyWeather["Wind Speed"] = round((weatherData['list'][x]['wind']['speed']),2)
+<<<<<<< HEAD
+=======
             hourlyWeather["Date"] = weatherData['list'][x]['dt_txt']
+>>>>>>> b1d08d9919909f4fb0e87bb665f14488ce6c3b68
     return hourlyWeather
 
