@@ -3,18 +3,69 @@
     <head>
         <title>Weather</title>
         <link rel="icon" type="image/png" sizes="16x16" href="static/images/icon.ico">
+        <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+        <link rel="stylesheet" href="static/weather.css">
+
+        <style>
+            body{
+                padding:0 0 0 100px;
+            }
+            .title{
+                text-align: left;
+                font-family: 'Open Sans'; 
+                font-weight:300;
+                font-size: 50px;
+            }
+            @font-face {
+                font-family: 'Open Sans';
+                font-style: normal;
+                font-weight: 300;
+                src:url(https://fonts.gstatic.com/s/opensans/v13/DXI1ORHCpsQm3Vp6mXoaTRa1RVmPjeKy21_GQJaLlJI.woff) format('woff');
+}
+            blue{
+                color: #5783F3;
+            }
+            lightblue{
+                color:#54C1FF;
+            }
+            yellow{
+                color:#FCD121;
+            }
+            .rectangle{
+                height:8px;
+                width:26%;
+                background-color: #5783F3;
+            }
+            .image{
+                padding-top:50px;
+            }
+            h3{
+                font-family:'Futura';
+                font-weight:300;
+                font-size:30px;
+            }
+        </style>
+        <link rel="stylesheet" href="static/weather.css">
     </head>
     <body>
-        <h1>Today's Weather Forecast</h1>
-        <p>Tuxedo cats always looking dapper nya nya nyan. Destroy couch stare at wall turn and meow stare at wall some more meow again continue staring . Flex claws on the human's belly and purr like a lawnmower meowing chowing and wowing purr jump off balcony, onto stranger's head or groom forever, stretch tongue and leave it slightly out, blep sniff sniff. Be superior. Demand to be let outside at once, and expect owner to wait for me as i think about it ignore the human until she needs to get up, then climb on her lap and sprawl meow attempt to leap between furniture but woefully miscalibrate and bellyflop onto the floor; what's your problem? i meant to do that now i shall wash myself intently destroy the blinds. Stare at wall turn and meow stare at wall some more meow again continue staring sniff all the things. Your pillow is now my pet bed leave hair everywhere. Toilet paper attack claws fluff everywhere meow miao french ciao litterbox throw down all the stuff in the kitchen, cats making all the muffins that box? i can fit in that box. 
-            </p>
+        <img class="image" src="static/images/icon.png" style="width:100px;height:100px;"></img>
+        <h1 class="title"><blue>Where are you headed today?</blue></h1>
+        <div class="rectangle"></div>
+
+        <div>
+            <h3>Dress for the weather.</h3>
+            <h3>Be prepared for <lightblue>rain</lightblue> or <yellow>sunshine</yellow>.</h3>
+        </div>
+
+
+        
         <button type="button">
             <a href='/mainmenu'>Click here to go back to the main menu!</a>
 
             <div class="my-3 py-3">
                     <h2 class="display-5">Symbol Lookup</h2>
                     <form action="/weather" method="post">
-                        <input name="city" placeholder="city">            
+                        <input name="City" placeholder="City">         
                         <input type="submit">
                     </form>
                 </div>
