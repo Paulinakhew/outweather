@@ -21,7 +21,7 @@
                 font-style: normal;
                 font-weight: 300;
                 src:url(https://fonts.gstatic.com/s/opensans/v13/DXI1ORHCpsQm3Vp6mXoaTRa1RVmPjeKy21_GQJaLlJI.woff) format('woff');
-}
+            }
             blue{
                 color: #5783F3;
             }
@@ -45,42 +45,25 @@
                 font-weight:300;
                 font-size:30px;
             }
-
             .send-container {
                 width: 90%;
                 
             }
-
             .send-btn {
                 width: 100%;
             }
-
             .city-input {
-                width: 100%;
-                color: #5B85F4;
+                width: 99%;
+                color: #5A85F4;
                 height: 50px;
+                margin: 5px;
+                font-size:200%;
+                font-family: 'Open Sans'; 
+                font-weight:300;
                 text-align: center;
-                font-size:100%;
             }
-
-            .input-group.md-form.form-sm.form-1 input{
-                border: 1px solid #bdbdbd;
-                border-top-right-radius: 0.25rem;
-                border-bottom-right-radius: 0.25rem;
-            }
-            .input-group.md-form.form-sm.form-2 input {
-                border: 1px solid #bdbdbd;
-                border-top-left-radius: 0.25rem;
-                border-bottom-left-radius: 0.25rem;
-            }
-            .input-group.md-form.form-sm.form-2 input.red-border  {
-                border: 1px solid #ef9a9a;
-            }
-            .input-group.md-form.form-sm.form-2 input.lime-border  {
-                border: 1px solid #cddc39;
-            }
-            .input-group.md-form.form-sm.form-2 input.amber-border  {
-                border: 1px solid #ffca28;
+            .blue-text {
+                color: #5A85F4;
             }
             .header {
                 width:90%;
@@ -99,19 +82,16 @@
         <h1 class="title"><blue>Where are you headed today?</blue></h1>
 
         <div>
-            <h3>Dress for the weather.</h3>
-            <h3>Be prepared for <lightblue>rain</lightblue> or <yellow>sunshine</yellow>.</h3>
+            <div class='blue-text'>
+                <h3>Dress for the weather.</h3>
+                <h3>Be prepared for <lightblue>rain</lightblue> or <yellow>sunshine</yellow>.</h3>
+            </div>
             <div class="my-3 py-3 send-container">
                 <form action="/weather" method="post">
-                    <div class="input-group-prepend">
-                        <span class="input-group-text purple lighten-3" id="basic-text1"><i class="fas fa-search text-white"
-                            aria-hidden="true"></i>
-                        </span>
-                    </div>
-                    <input class="form-control city-input" type="text" placeholder="City" name='city'>
+                    <input class="form-control city-input" type="text" placeholder="City" name='city' required>
                     </br>
                     </br>
-                    <input type="image" class="send-btn" src="https://github.com/Paulinakhew/hack_the_valley/blob/master/static/images/Send.png?raw=true" border="0" alt="Submit" />
+                    <input type="image" class="send-btn" src="static/images/Send.png" border="0" alt="Submit" />
                 </form>
             </div>
         </div>
