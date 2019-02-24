@@ -1,5 +1,7 @@
 #!usr/bin/env python3
 import requests
+import random
+from datetime import datetime
 import model as m
 
 from flask import Flask, render_template, request, redirect, session
@@ -21,7 +23,7 @@ def weather():
     else:
         submitted_city = request.form['city']
         result = m.getWeather(submitted_city)
-        cold_footwear = ["Boots", "Hiking Boots", "Uggs", ]
+        cold_footwear = ["Boots", "Hiking Boots", "Uggs", "Winter Moccasins"]
         cold_top = ["Jacket", "Parka", ]
         cold_accessories = ["Hat", "Touque", "Mittens", "Gloves", "Scarf", "Thermal Base Layers"]
         cold_bottoms = ["Jeans", "Sweatpants", "Leggings", "Jeggings"]
@@ -33,15 +35,20 @@ def weather():
 
         snowRain_footwear = ["Boots", "Hiking Shoes", "Rain Boots"]
         snowRain_top = ["Jacket", "Parka", ]
-        snowRain_accessories = ["Hat", "Touque", "Gloves", ""]
+        snowRain_accessories = ["Hat", "Touque", "Gloves", "Scarf"]
         snowRain_bottoms = ["Sweatpants", "Jeans", "Leggings", ]
 
         hot_footwear = ["Flip-Flops", "Sandals", "Slides", "Running Shoes", "Slip-On Casual Shoes"]
         hot_top = ["Tank Top", "T-Shirt", "Undershirt"]
-        hot_accessories = []
+        hot_accessories = ["Fan", "Water Bottle"]
         hot_bottoms = ["Shorts", "Cargo Shorts", "Jean Shorts", "Trackpants", "3/4 Length Trackpants", ]
+        random.seed(datetime.now())
+        
+        return render_template('outfits.html', city = submitted_city, result = result, coldFootware = cold_footwear,
+        coldBottoms = cold_bottoms, coldTop = cold_top, coldAccessories = cold_accessories,
+        mildFootwear = mild_footwear, mildTop = mild_top, mildAccessories = mild_accessories, mildBottoms = mild_bottoms,
+        precipFootwear = snowRain_footwear, precipTop = snowRain_top, precipAccessories = snowRain_accessories, precipBottom = snowRain_bottoms,
+        hotFootwear = hot_footwear, hotTop = hot_top, hotAccessories = hot_accessories, hotBottoms = hot_bottoms)
 
-        return render_template('outfits.html', city = submitted_city, result = result)
-    
 if __name__ == '__main__':
     app.run(debug=True)
