@@ -109,7 +109,6 @@
     <div class = "outfit">
                 <div class = "container top">
             {% if result["Temperature"]>25 %}
-
                     <h1>Top</h1>
                     <h4>{{hotTop[randomInt]}}</h4>
                 </div>
@@ -124,17 +123,17 @@
                     <h4>{{coldTop[randomInt]}}</h4>
             {% endif %}
             {% for style in jacketsIcon %}
-                {% if hotBottoms[randomInt] == style %}
+                {% if hotTop[randomInt] == style %}
                     <img class = "jacket" src = "static/images/jacket.png">
                 {% endif %}
             {% endfor %}
             {% for style in tShirtIcon %}
-                {% if hotBottoms[randomInt] == style %}
+                {% if hotTop[randomInt] == style %}
                     <img class = "t-shirt" src = "static/images/t-shirt.png">
                 {% endif %}
             {% endfor %}
             {% for style in longSleeveIcon %}
-                {% if hotBottoms[randomInt] == style %}
+                {% if hotTop[randomInt] == style %}
                     <img class = "long-sleeve-shirt" src = "static/images/long-sleeve.png">
                 {% endif %}
             {% endfor %}
@@ -160,7 +159,7 @@
             {% endif %}
             {% for style in fullBottomsIcon %}
                 {% if hotBottoms[randomInt] == style %}
-                    <img class = "full-bottoms" src = "static/images/full-length.svg">
+                    <img class = "full-bottoms" src = "static/images/long-pants.svg">
                 {% endif %}
             {% endfor %}
             {% for style in halfBottomsIcon %}
