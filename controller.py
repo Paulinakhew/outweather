@@ -21,7 +21,7 @@ def weather():
     else:
         submitted_city = request.form['city']
         result = m.getWeather(submitted_city)
-        cold_footwear = ["Boots", "Hiking Boots"]
+        cold_footwear = ["Boots", "Hiking Boots", "Uggs", ]
         cold_top = ["Jacket", "Parka", ]
         cold_accessories = ["Hat", "Touque", "Mittens", "Gloves", "Scarf", "Thermal Base Layers"]
         cold_bottoms = ["Jeans", "Sweatpants", "Leggings", "Jeggings"]
