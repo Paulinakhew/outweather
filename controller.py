@@ -22,7 +22,6 @@ def weather():
         global submitted_city
         submitted_city = request.form['city']
         return render_template('weather.html')
-        #global submitted_city
         submitted_city = request.form['city']
         result = m.getWeather(submitted_city)
         return render_template('outfits.html', city = submitted_city, result = result)
