@@ -75,7 +75,7 @@
                 <bold><h3 style="font-size:90px;">{{city| title}}</h3></bold>
                 {% for state in weather %}
                     {% if result["Weather"] == state %}
-                        <img class = "weather_icon" src = "{{ "static/images/" ~ state ~ ".svg" }}" height="180px" width="180px">
+                        <img class = "weather_icon" src = "{{ "static/images/" ~ state ~ ".png" }}" height="180px" width="180px">
                     {% endif %}
                 {% endfor %}
 
@@ -127,6 +127,11 @@
                 <div class = "container bottoms">
                     <h1>Bottoms</h1>
                     <h4>{{hotBottoms[randomInt]}}</h4>
+                    {% for style in halfBottomsIcon %}
+                        {% if style == hotBottoms[randomInt] %}
+                            <img class = "half-bottoms" src = "static/images/full-length.png">
+                        {% endif %}
+                    {% endfor %}
                 </div>
             {% elif result["Temperature"] > 10 and result["Temperature"] < 25 %}
                 <div class = "container bottoms">
