@@ -27,7 +27,7 @@
     </br>
     {% for state in weather %}
         {% if result["Weather"] == state %}
-            <img class = "weather_icon" src = "{{ "static/images/" ~ state ~ ".png" }}" >
+            <img class = "weather_icon" src = "{{ "static/images/" ~ state ~ ".svg" }}" >
         {% endif %}
     {% endfor %}
 
