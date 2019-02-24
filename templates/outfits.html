@@ -75,7 +75,7 @@
                 <bold><h3 style="font-size:90px;">{{city| title}}</h3></bold>
                 {% for state in weather %}
                     {% if result["Weather"] == state %}
-                        <img class = "weather_icon" src = "{{ "static/images/" ~ state ~ ".png" }}" height="180px" width="180px">
+                        <img class = "weather_icon" src = "{{ "static/images/" ~ state ~ ".svg" }}" height="180px" width="180px">
                     {% endif %}
                 {% endfor %}
 
