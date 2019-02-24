@@ -62,10 +62,10 @@ def outfits():
         t_shirt = ["T-Shirt", "Tank Top", "Undershirt", "Polo"]
         long_sleeve_shirt = ["Long-Sleeve Shirt", "Light Sweatshirt", "Dress Shirt", "Blouse"]
 
-        boots = ["Boots", "Hiking Boots", "Uggs"]
+        boots = ["Boots", "Hiking Boots", "Uggs", "Leather Shoes"]
         joggers = ["Running Shoes", "Slip-On Casual Shoes"]
         sandals = ["Slides", "Flip-Flops", "Sandals"]
-        miscellanouse_shoes = ["Winter Moccasins", "Leather Shoes", "Dress Shoes", "Heels"]
+        miscellanouse_shoes = ["Winter Moccasins", "Dress Shoes", "Heels"]
 
         full_length = ["Jeans", "Sweatpants", "Leggings", "Jeggings", "Khakis", "Long Skirt", "Cargo Pants", "Dress Pants", "Trackpants"]
         half_length = ["Short Skirt", "Cargo Shorts", "Jean Shorts", "Athletic Shorts"]
@@ -78,7 +78,8 @@ def outfits():
         mildFootwear = mild_footwear, mildTop = mild_top, mildAccessories = mild_accessories, mildBottoms = mild_bottoms,
         hotFootwear = hot_footwear, hotTop = hot_top, hotAccessories = hot_accessories, hotBottoms = hot_bottoms, 
         jacketsIcon = jackets, tShirtIcon = t_shirt, longSleeveIcon = long_sleeve_shirt, bootsIcon = boots,
-        joggersIcon = joggers, sandalsIcon = sandals, miscShoes = miscellanouse_shoes, weather = weather)
+        joggersIcon = joggers, sandalsIcon = sandals, miscShoes = miscellanouse_shoes, weather = weather, longPants = full_length,
+        shortPants = half_length)
     else:
         submitted_city = session.get('submitted_city', None)
         result = m.getWeather(submitted_city)
@@ -104,10 +105,10 @@ def outfits():
         t_shirt = ["T-Shirt", "Tank Top", "Undershirt", "Polo"]
         long_sleeve_shirt = ["Long-Sleeve Shirt", "Light Sweatshirt", "Dress Shirt", "Blouse"]
 
-        boots = ["Boots", "Hiking Boots", "Uggs"]
+        boots = ["Boots", "Hiking Boots", "Uggs", "Leather Shoes"]
         joggers = ["Running Shoes", "Slip-On Casual Shoes"]
         sandals = ["Slides", "Flip-Flops", "Sandals"]
-        miscellanouse_shoes = ["Winter Moccasins", "Leather Shoes", "Dress Shoes", "Heels"]
+        miscellanouse_shoes = ["Winter Moccasins", "Dress Shoes", "Heels"]
 
         full_length = ["Jeans", "Sweatpants", "Leggings", "Jeggings", "Khakis", "Long Skirt", "Cargo Pants", "Dress Pants", "Trackpants"]
         half_length = ["Short Skirt", "Cargo Shorts", "Jean Shorts", "Athletic Shorts"]
