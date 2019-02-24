@@ -25,8 +25,10 @@
     </div>
     </br>
     </br>
-    {% for let index in weather %}
-        {% if  %}
+    {% for state in weather %}
+        {% if result["Weather"] == state %}
+            <img class = "weather_icon" src = "{{ "static/images/" ~ state ~ ".png" }}" >
+        {% endif %}
     {% endfor %}
 
     <div class = "outfit">
