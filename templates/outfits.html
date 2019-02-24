@@ -247,19 +247,20 @@
             {% if result["Temperature"]>25 %}
                     <h1>Accessories</h1>
                     <h4>{{hotAccessories[randomInt]}}</h4>
+                    <img class = "accessories" src = "static/images/accessorieshot.svg">
                 </div>
             {% elif result["Temperature"] > 10 and result["Temperature"] < 25 %}
                 <div class = "container accessories">
                     <h1>Accessories</h1>
                     <h4>{{mildAccessories[randomInt]}}</h4>
+                    <img class = "accessories" src = "static/images/accessoriesmild.svg">
                 </div>
             {% elif result["Temperature"] < 10 %}
                 <div class = "container accessories">
                     <h1>Accessories</h1>
                     <h4>{{coldAccessories[randomInt]}}</h4>
-            {% endif %}
-            <img class = "accessories" src = "static/images/accessories.svg">
-                </div>
+                    <img class = "accessories" src = "static/images/accessoriescold.svg">
+            {% endif %}                </div>
 
             <!--- SEPERATING SECTIONS  -->
 
