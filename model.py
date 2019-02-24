@@ -17,4 +17,10 @@ def getWeather(city):
             hourlyWeather["Wind Speed"] = round((weatherData['list'][x]['wind']['speed']),2)
             hourlyWeather["Date"] = date
     return hourlyWeather
-    
+
+def check_status_code(city):
+    response = requests.get('http://api.openweathermap.org/data/2.5/forecast?q={}&APPID=225800a064f12ac6d7fbaadf83ce753f'.format(city))
+    if int(response.status_code) != 200:
+        return False
+    else:
+        return True
