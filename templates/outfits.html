@@ -5,29 +5,73 @@
 </head>
 
 <body>
-    <h1>Outfits</h1>
-    <h1>{{city}}</h1>
-    <h2>{{result["Date"]}}</h2>
-    <h2>{{result["Temperature"]}}˚C</h2>
-    <h3>{{result["Weather"]}}</h3>
-    <h3>{{result["Weather Details"]}}</h3>
-    <h3>{{result["Wind Speed"]}} km/h</h3>
-    <h1>My Outfit</h1>
+    <div class = "row">
+        <h1 class = "col-md-12 text-center">Today's Weather</h1>
+    </div>  
+    <div class = "row">
+        <h1 class = "col-md-6 text-center">{{city}}</h1>
+        <h2 class = "col-md-6 text-center">{{result["Date"]}}</h2>
+    </div>
+    <div class = "row">
+        <h2 class = "col-md-6 text-center">{{result["Temperature"]}}˚C</h2>
+        <h3 class = "col-md-6 text-center">{{result["Wind Speed"]}} km/h</h3>
+    </div>
+    <div class = "row">
+        <h3 class = "col-md-6 text-center">{{result["Weather"]}}</h3>
+        <h3 class = "col-md-6 text-center">{{result["Weather Details"]}}</h3>
+    </div>
+    <div class = "row">
+        <h1 class = "col-md-12 text-center">My Outfit</h1>
+    </div>
+    </br>
+    </br>
     <div class = "outfit">
-        <div class = "container top">
+            {% if result["Temperature"]>25 %}
+                <div class = "container top">
+                    <h1>Top</h1>
+                    <h4>{{hotTop[randomInt]}}</h4>
+                </div>
+            {% elif result["Temperature"] > 10 and result["Temperature"] < 25 %}
+                <div class = "container top">
+                    <h1>Top</h1>
+                    <h4>{{mildTop[randomInt]}}</h4>
+                </div>
+            {% elif result["Temperature"] < 10 %}
+                <div class = "container top">
+                    <h1>Top</h1>
+                    <h4>{{coldTop[randomInt]}}</h4>
+                </div>
+            {% endif %}
 
-        </div>
+            <!--- SEPERATING SECTIONS  -->
 
-        <div class = "container bottoms">
+            {% if result["Temperature"]>25 %}
+                <div class = "container bottoms">
+                    <h1>Bottoms</h1>
+                    <h4>{{hotBottoms[randomInt]}}</h4>
+                </div>
+            {% elif result["Temperature"] > 10 and result["Temperature"] < 25 %}
+                <div class = "container bottoms">
+                    <h1>Bottoms</h1>
+                    <h4>{{mildBottoms[randomInt]}}</h4>
+                </div>
+            {% elif result["Temperature"] < 10 %}
+                <div class = "container bottoms">
+                    <h1>Bottoms</h1>
+                    <h4>{{coldBottoms[randomInt]}}</h4>
+                </div>
+            {% endif %}
+                <div class = "container bottoms">
 
-        </div>
+                </div>
 
-        <div class = "container accessories">
+                <div class = "container accessories">
 
-        </div>
+                </div>
 
-        <div class = "container footwear">
+                <div class = "container footwear">
 
-        </div>
+                </div>
+
     </div>
 </body>
