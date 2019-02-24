@@ -93,12 +93,12 @@ def outfits():
 
         mild_footwear = ["Running Shoes", "Dress Shoes", "Slip-On Casual Shoes", "Slides", "Heels"]
         mild_top = ["T-Shirt", "Long-Sleeve Shirt", "Light Sweatshirt", "Jean Jacket", "Dress Shirt"]
-        mild_accessories = ["Baseball Cap", "Headband", "Parasol", "Bucket Hat", "Watch"]
+        mild_accessories = ["Baseball Cap", "Headband", "Bucket Hat", "Watch"]
         mild_bottoms = ["Sweatpants", "Long Skirt", "Jeans", "Cargo Pants", "Dress Pants", "Leggings"]
 
         hot_footwear = ["Flip-Flops", "Sandals", "Slides", "Running Shoes", "Slip-On Casual Shoes"]
         hot_top = ["Tank Top", "T-Shirt", "Undershirt", "Polo", "Blouse"]
-        hot_accessories = ["Fan", "Water Bottle", "Sunscreen", "Parasol", "Sunglasses"]
+        hot_accessories = ["Fan", "Water Bottle", "Sunscreen", "Sunglasses"]
         hot_bottoms = ["Short Skirt", "Cargo Shorts", "Jean Shorts", "Trackpants", "Athletic Shorts"]
 
         jackets = ["Jacket", "Parka", "Overcoat", "Jacket Shell", "Fur Coat", "Jean Jacket"]
