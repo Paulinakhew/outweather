@@ -17,4 +17,4 @@ def getWeather(city):
             hourlyWeather["Wind Speed"] = round((weatherData['list'][x]['wind']['speed']),2)
             hourlyWeather["Date"] = date
     return hourlyWeather
-
+    
