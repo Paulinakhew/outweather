@@ -58,7 +58,7 @@ def outfits():
         hot_accessories = ["Fan", "Water Bottle", "Sunscreen", "Parasol", "Sunglasses"]
         hot_bottoms = ["Short Skirt", "Cargo Shorts", "Jean Shorts", "Trackpants", "Athletic Shorts"]
 
-        jackets = ["Jacket", "Parka", "Overcoat", "Jacket Shell", "Fur Coat", "Jean Jacket"]
+        jackets = ["Jacket", "Parka", "Overcoat", "Jacket Shell", "Jean Jacket"]
         t_shirt = ["T-Shirt", "Tank Top", "Undershirt", "Polo"]
         long_sleeve_shirt = ["Long-Sleeve Shirt", "Light Sweatshirt", "Dress Shirt", "Blouse"]
 
