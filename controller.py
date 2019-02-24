@@ -38,7 +38,7 @@ def weather():
         mild_top = ["T-Shirt", "Long-Sleeve Shirt", "Light Sweatshirt", "Jean Jacket", "Dress Shirt"]
         mild_accessories = ["Baseball Cap", "Headband", "Parasol", "Bucket Hat", "Watch"]
         mild_bottoms = ["Sweatpants", "Long Skirt", "Jeans", "Cargo Pants", "Dress Pants", "Leggings"]
-        
+
         hot_footwear = ["Flip-Flops", "Sandals", "Slides", "Running Shoes", "Slip-On Casual Shoes"]
         hot_top = ["Tank Top", "T-Shirt", "Undershirt", "Polo", "Blouse"]
         hot_accessories = ["Fan", "Water Bottle", "Sunscreen", "Parasol", "Sunglasses"]
@@ -56,12 +56,15 @@ def weather():
         full_length = ["Jeans", "Sweatpants", "Leggings", "Jeggings", "Khakis", "Long Skirt", "Cargo Pants", "Dress Pants", "Trackpants"]
         half_length = ["Short Skirt", "Cargo Shorts", "Jean Shorts", "Athletic Shorts"]
 
+        weather = ["Thunderstorm", "Drizzle", "Rain", "Snow", "Atmosphere", "Clear", "Clouds"]
 
 
         return render_template('outfits.html', city = submitted_city, result = result, randomInt = random_num, coldFootwear = cold_footwear,
         coldBottoms = cold_bottoms, coldTop = cold_top, coldAccessories = cold_accessories,
         mildFootwear = mild_footwear, mildTop = mild_top, mildAccessories = mild_accessories, mildBottoms = mild_bottoms,
-        hotFootwear = hot_footwear, hotTop = hot_top, hotAccessories = hot_accessories, hotBottoms = hot_bottoms)
+        hotFootwear = hot_footwear, hotTop = hot_top, hotAccessories = hot_accessories, hotBottoms = hot_bottoms, 
+        jacketsIcon = jackets, tShirtIcon = t_shirt, longSleeveIcon = long_sleeve_shirt, bootsIcon = boots,
+        joggersIcon = joggers, sandalsIcon = sandals, miscShoes = miscellanouse_shoes, weather = weather)
 
 if __name__ == '__main__':
     app.run(debug=True)
