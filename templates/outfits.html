@@ -78,6 +78,7 @@
     }
     .right1 {
         width: 33%;
+        text-align: center;
     }
     .clothes {
         height: 80px;
@@ -86,7 +87,20 @@
     .card1 {
         background-color: #5581f3;
     }
-    
+    .card2 {
+        background-color: #2FB494;
+    }
+    .card3 {
+        background-color: #FCD121;
+    }
+    .card4 {
+        background-color: #5581f3;
+    }
+    .card1, .card2, .card3, .card4 {
+        border-radius: 15px;
+    }
+
+
     .font1 {
         font-family: 'Heiti SC';
     }
@@ -190,7 +204,7 @@
                         {% endfor %}
                 {% endif %}
                 </div>
-                <div class="card2">
+                <div class="card3">
                 {% if result["Temperature"]>25 %}
                 <h1>Bottoms</h1>
                 <h4>{{hotBottoms[randomInt]}}</h4>
@@ -239,11 +253,11 @@
             </div>
             
             <div class="right1">
-                <div>
+                <div class="card2">
                     {% if result["Temperature"]>25 %}
                         <h1>Accessories</h1>
                         <h4>{{hotAccessories[randomInt]}}</h4>
-                    </div>
+                    
                 {% elif result["Temperature"] > 10 and result["Temperature"] < 25 %}
                     <div class = "container accessories">
                         <h1>Accessories</h1>
@@ -255,9 +269,10 @@
                 {% endif %}
 
                 <div class = "container accessories">
-
-                        <img class = "accessories clothes" src = "static/images/accessories.svg">
-                    </div>
+                    <img class = "accessories clothes" src = "static/images/accessories.svg">
+                </div>
+                </div>
+                <div class="card4">
                     {% if result["Temperature"]>25 %}
                     <h1>Footwear</h1>
                     <h4>{{hotFootwear[randomInt]}}</h4>
@@ -284,7 +299,6 @@
                     {% if hotFootwear[randomInt] == "Heels" %}
                         <img class = "heels" src = "static/images/heels.svg">
                     {% endif %}
-                </div>
             {% elif result["Temperature"] > 10 and result["Temperature"] < 25 %}
                 <div class = "container footwear">
                     <h1>Footwear</h1>
@@ -341,6 +355,7 @@
                         <img class = "heels" src = "static/images/heels.svg">
                     {% endif %}
             {% endif %}
+                </div>
                 </div>
             </div>
         <br>
