@@ -7,74 +7,93 @@
     <style>
     .background{
         width:100%;
-    	height:900px;
-    	background: linear-gradient(to bottom, #5581F3 50%, white 50%);
+        height:auto;
+        min-height: 100px;
+        background-color: #5581F3;
+        box-shadow:0 5px 15px 0 rgba(0,0,0,.18),
+                0 5px 12px 0 rgba(218, 199, 199, 0.12);
+        display:block;
+        z-index:-1;
+        right:0px;
+        left:0px;
+
     }
+    .white-text {
+        color:white;
+    }
+    .background-color {
+        background-color:#5581F3;
+        display:block;
+        width:100%;
+    }
+
     green{
         color:#2FB494;
     }
+
     .title{
+        float:left;
         font-family: 'Futura';
         font-weight: 300;
         font-size: 70px;
-        color:#fff;
+        color:white;
+    }
+    .date{
+        float:right;
+        font-family: 'Futura';
+        font-weight: 300;
+        font-size:70px;
+        color:white;
+    }
+    .column {
+        float:left;
+        padding:20px;
+    }
+    .left {
+        max-width: 40%;
+        margin-left: 100px;
+    }
+    .right {
+        max-width: 60%;
+        margin-top: 30px;
+        margin-left: 50px;
+    }
+    .row:after {
+        content:"";
+        display: table;
+        clear:both;
+    }
+    .font-60 {
+        font-size: 60px;
     }
     </style>
 </head>
 
 <body>
-    <div class="background">
-        <div>
+    <div class="background white-text">
+        <div class="row">
+            <div class="column left">
+                <bold><h3 style="font-size:90px;">{{city| title}}</h3></bold>
+                <img src='https://cdn3.iconfinder.com/data/icons/chubby-weather/403/rain_less-512.png' height="180px" width="180px">
+                <h2 style="font-size:80px;">{{result["Temperature"]}}˚C</h2>
+            </div>
+            <div class="column right">
+                <h3 style="font-size:50px;top:20px;">{{result["Date"]}} 12:00 PM</h3>
+                </br>
+                <h3 class='font-60'>{{result["Weather Details"]|upper}}</h3>
+                </br>
+                <h3 class='font-60'>WINDSPEED: {{ result["Wind Speed"]}} km/h</h3>
+            </div>
+        
+        
+    
+        
 
-        </div>
-        <h1 class="title">{{city}}</h1>
-        <h2>{{result["Date"]}}</h2>
-        <h2>{{result["Temperature"]}}˚C</h2>
-        <h3>{{result["Weather"]}}</h3>
-        <h3>{{result["Weather Details"]}}</h3>
-        <h3>{{result["Wind Speed"]}} km/h</h3>
-        <h1><green>My Outfits</green></h1>
         <br>
-        <h1>My Outfit</h1>
-    </div> 
+    </div>
+    </div>
+        <h1><green>My Outfit</green></h1>
+    
     
 
-    
-    <div class = "row">
-        <h1 class = "col-md-12 text-center">Outfits</h1>
-    </div>  
-    <div class = "row">
-        <h1 class = "col-md-6 text-center">{{city}}</h1>
-        <h2 class = "col-md-6 text-center">{{result["Date"]}}</h2>
-    </div>
-    <div class = "row">
-        <h2 class = "col-md-6 text-center">{{result["Temperature"]}}˚C</h2>
-        <h3 class = "col-md-6 text-center">{{result["Wind Speed"]}} km/h</h3>
-    </div>
-    <div class = "row">
-        <h3 class = "col-md-6 text-center">{{result["Weather"]}}</h3>
-        <h3 class = "col-md-6 text-center">{{result["Weather Details"]}}</h3>
-    </div>
-    <div class = "row">
-        <h1 class = "col-md-12 text-center">My Outfit</h1>
-    </br>
-    </br>
-    </div>
-    <div class = "outfit">
-            <div class = "container top">
-
-            </div>
-
-            <div class = "container bottoms">
-
-            </div>
-
-            <div class = "container accessories">
-
-            </div>
-
-            <div class = "container footwear">
-
-            </div>
-    </div>
 </body>
