@@ -47,6 +47,7 @@
     .column {
         float:left;
         padding:20px;
+        height: 500px;
     }
     .left {
         max-width: 40%;
@@ -67,6 +68,15 @@
     }
     .weather_icon{
         fill:white;
+    }
+    .left1 {
+        max-width: 34%;
+    }
+    .middlecol{
+        max-width: 33%;
+    }
+    .right1 {
+        max-width: 33%;
     }
     </style>
 </head>
@@ -89,19 +99,30 @@
                 </br>
                 <h3 class='font-60'>{{result["Weather Details"]|upper}}</h3>
                 </br>
-                <h3 class='font-60'>WINDSPEED: {{ result["Wind Speed"]}} km/h</h3>
+                <h3 class='font-60'>WIND SPEED: {{ result["Wind Speed"]}} km/h</h3>
             </div>
 
         <br>
     </div>
     </div>
+    <!-- Outfits -->
+    <div>
+        <div class="row">
+            <div class="left1">
+                <bold><green><h3 style="font-size:90px;">My Outfit</h3></green></bold>
+            </div>
+            <div class="middlecol">
+                <div>
+                    
+                </div>
+            </div>
+            <div class="right1">
+                <div>
 
-    <div class = "row">
-        <h3 class = "col-md-6 text-center">{{result["Weather"]}}</h3>
-        <h3 class = "col-md-6 text-center">{{result["Weather Details"]}}</h3>
+                </div>
+            </div>
+        <br>
     </div>
-    <div class = "row">
-        <h1 class = "col-md-12 text-center">Your Outfit</h1>
     </div>
     </br>
     </br>
