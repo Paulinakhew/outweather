@@ -127,9 +127,9 @@
                 <div class = "container bottoms">
                     <h1>Bottoms</h1>
                     <h4>{{hotBottoms[randomInt]}}</h4>
-                    {% for style in halfBottomsIcon %}
-                        {% if style == hotBottoms[randomInt] %}
-                            <img class = "half-bottoms" src = "static/images/full-length.png">
+                    {% for style in fullBottomsIcon %}
+                        {% if hotBottoms[randomInt] == style %}
+                            <img class = "full-bottoms" src = "static/images/full-length.png">
                         {% endif %}
                     {% endfor %}
                 </div>
@@ -183,10 +183,5 @@
                     <h4>{{coldFootwear[randomInt]}}</h4>
                 </div>
             {% endif %}
-
-                <div class = "container footwear">
-
-                </div>
-
     </div>
 </body>
