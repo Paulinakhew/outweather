@@ -21,14 +21,26 @@ def weather():
     else:
         submitted_city = request.form['city']
         result = m.getWeather(submitted_city)
-        return render_template('outfits.html', city = submitted_city, result = result)
+        cold_footwear = ["Boots", "Hiking Boots"]
+        cold_top = ["Jacket", "Parka", ]
+        cold_accessories = ["Hat", "Touque", "Mittens", "Gloves", "Scarf", "Thermal Base Layers"]
+        cold_bottoms = ["Jeans", "Sweatpants", "Leggings", "Jeggings"]
 
-@app.route('/outfits', methods=['GET', 'POST'])
-def outfits():
-    if request.method == "GET":
-        return render_template('weather.html')
-    else:
-        result = m.getWeather(submitted_city)
+        mild_footwear = ["Running Shoes", "Dress Shoes", ""]
+        mild_top = ["T-Shirt", "Long-Sleeve Shirt", "Light Sweatshirt"]
+        mild_accessories = []
+        mild_bottoms = ["Sweatpants", "Trackpants", "Jeans", "Cargo Pants", "Dress Pants", "Leggings"]
+
+        snowRain_footwear = ["Boots", "Hiking Shoes", ]
+        snowRain_top = []
+        snowRain_accessories = []
+        snowRain_bottoms = []
+
+        hot_footwear = []
+        hot_top = []
+        hot_accessories = []
+        hot_bottoms = []
+
         return render_template('outfits.html', city = submitted_city, result = result)
     
 if __name__ == '__main__':
