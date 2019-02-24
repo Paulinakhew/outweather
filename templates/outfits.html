@@ -148,6 +148,9 @@
                                 <img class = "top clothes" src = "static/images/long-sleeve.svg">
                             {% endif %}
                         {% endfor %}
+                        {% if hotTop[randomInt] == "Fur Coat" %}
+                            <img class = "top clothes" src = "static/images/furcoat.svg">
+                        {% endif %}
                     
                 {% elif result["Temperature"] > 10 and result["Temperature"] < 25 %}
                     
@@ -168,6 +171,9 @@
                                 <img class = "top clothes" src = "static/images/long-sleeve.svg">
                             {% endif %}
                         {% endfor %}
+                        {% if mildTop[randomInt] == "Fur Coat" %}
+                            <img class = "top clothes" src = "static/images/furcoat.svg">
+                        {% endif %}
                     
                 {% elif result["Temperature"] < 10 %}
                     
@@ -188,6 +194,9 @@
                                 <img class = "top clothes" src = "static/images/long-sleeve.svg">
                             {% endif %}
                         {% endfor %}
+                        {% if coldTop[randomInt] == "Fur Coat" %}
+                            <img class = "top clothes" src = "static/images/furcoat.svg">
+                        {% endif %}
                 {% endif %}
                 </div>
                 <div class="card2">
