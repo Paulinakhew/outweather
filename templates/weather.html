@@ -49,9 +49,11 @@
         <link rel="stylesheet" href="static/weather.css">
     </head>
     <body>
-        <div>
-            <img class="image" src="static/images/BackMainMenu.png" style="width:186.5px;height:45px;"></img>
-        </div>
+        <a href="/mainmenu">
+            <div>
+                <img class="image" src="static/images/BackMainMenu.png" style="width:186.5px;height:45px;"></img>
+            </div>
+        </a>
         <img class="image" src="static/images/icon.png" style="width:100px;height:100px;"></img>
         <h1 class="title"><blue>Where are you headed today?</blue></h1>
         <div class="rectangle"></div>
@@ -62,12 +64,10 @@
         </div>
 
         <button type="button">
-            <a href='/mainmenu'>Click here to go back to the main menu!</a>
 
             <div class="my-3 py-3">
-                    <h2 class="display-5">Symbol Lookup</h2>
                     <form action="/weather" method="post">
-                        <input name="city" placeholder="City">         
+                        <input name="city" placeholder="City">     </br>  </br>  
                         <input type="submit">
                     </form>
                 </div>
