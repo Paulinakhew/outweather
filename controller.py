@@ -26,18 +26,18 @@ def weather():
         cold_accessories = ["Hat", "Touque", "Mittens", "Gloves", "Scarf", "Thermal Base Layers"]
         cold_bottoms = ["Jeans", "Sweatpants", "Leggings", "Jeggings"]
 
-        mild_footwear = ["Running Shoes", "Dress Shoes", ""]
-        mild_top = ["T-Shirt", "Long-Sleeve Shirt", "Light Sweatshirt"]
+        mild_footwear = ["Running Shoes", "Dress Shoes", "Slip-On Casual Shoes"]
+        mild_top = ["T-Shirt", "Long-Sleeve Shirt", "Light Sweatshirt", "Jean Jacket", "Dress Shirt"]
         mild_accessories = []
         mild_bottoms = ["Sweatpants", "Trackpants", "Jeans", "Cargo Pants", "Dress Pants", "Leggings"]
 
         snowRain_footwear = ["Boots", "Hiking Shoes", ]
-        snowRain_top = []
+        snowRain_top = ["Jacket", "Parka", ]
         snowRain_accessories = []
         snowRain_bottoms = []
 
-        hot_footwear = []
-        hot_top = []
+        hot_footwear = ["Flip-Flops", "Sandals", "Slides", "Running Shoes", "Slip-On Casual Shoes"]
+        hot_top = ["Tank Top", "T-Shirt", "Undershirt"]
         hot_accessories = []
         hot_bottoms = []
 
