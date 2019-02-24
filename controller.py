@@ -88,7 +88,7 @@ def outfits():
         
         cold_footwear = ["Boots", "Hiking Boots", "Uggs", "Winter Moccasins", "Leather Shoes"]
         cold_top = ["Jacket", "Parka", "Overcoat", "Jacket Shell", "Fur Coat"]
-        cold_accessories = ["Hat", "Touque", "Scarf", "Thermal Base Layers"]
+        cold_accessories = ["Scarf", "Thermal Base Layers"]
         cold_bottoms = ["Jeans", "Sweatpants", "Leggings", "Jeggings", "Khakis"]
 
         mild_footwear = ["Running Shoes", "Dress Shoes", "Slip-On Casual Shoes", "Slides", "Heels"]

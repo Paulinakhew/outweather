@@ -287,6 +287,8 @@
                         <h1>Accessories</h1>
                         {% if coldAccessories[randomInt] == "Mittens" or coldAccessories[randomInt] == "Gloves" %}
                             <img class = "accessories clothes" src = "static/images/mittens.svg">
+                        {% elif coldAccessories[randomInt] == "Hat" or coldAccessories[randomInt] == "Toque" %}
+                            <img class = "accessories clothes" src = "static/images/toque.svg">
                         {% else %}
                             <img class = "accessories clothes" src = "static/images/accessoriescold.svg">
                         {% endif %}
