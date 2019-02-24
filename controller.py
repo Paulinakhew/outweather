@@ -29,20 +29,34 @@ def weather():
         random.seed(datetime.now())
         random_num = random.randint(0, 4)
         
-        cold_footwear = ["Boots", "Hiking Boots", "Uggs", "Winter Moccasins", "Leather shoes"]
+        cold_footwear = ["Boots", "Hiking Boots", "Uggs", "Winter Moccasins", "Leather Shoes"]
         cold_top = ["Jacket", "Parka", "Overcoat", "Jacket Shell", "Fur Coat"]
         cold_accessories = ["Hat", "Touque", "Mittens", "Gloves", "Scarf", "Thermal Base Layers"]
         cold_bottoms = ["Jeans", "Sweatpants", "Leggings", "Jeggings", "Khakis"]
 
         mild_footwear = ["Running Shoes", "Dress Shoes", "Slip-On Casual Shoes", "Slides", "Heels"]
         mild_top = ["T-Shirt", "Long-Sleeve Shirt", "Light Sweatshirt", "Jean Jacket", "Dress Shirt"]
-        mild_accessories = ["Baseball Cap", "Sunglasses", ""]
+        mild_accessories = ["Baseball Cap", "Headband", "Parasol", "Bucket Hat", "Watch"]
         mild_bottoms = ["Sweatpants", "Long Skirt", "Jeans", "Cargo Pants", "Dress Pants", "Leggings"]
-
+        
         hot_footwear = ["Flip-Flops", "Sandals", "Slides", "Running Shoes", "Slip-On Casual Shoes"]
         hot_top = ["Tank Top", "T-Shirt", "Undershirt", "Polo", "Blouse"]
-        hot_accessories = ["Fan", "Water Bottle", "Sunscreen"]
+        hot_accessories = ["Fan", "Water Bottle", "Sunscreen", "Parasol", "Sunglasses"]
         hot_bottoms = ["Short Skirt", "Cargo Shorts", "Jean Shorts", "Trackpants", "Athletic Shorts"]
+
+        jackets = ["Jacket", "Parka", "Overcoat", "Jacket Shell", "Fur Coat", "Jean Jacket"]
+        t_shirt = ["T-Shirt", "Tank Top", "Undershirt", "Polo"]
+        long_sleeve_shirt = ["Long-Sleeve Shirt", "Light Sweatshirt", "Dress Shirt", "Blouse"]
+
+        boots = ["Boots", "Hiking Boots", "Uggs"]
+        joggers = ["Running Shoes", "Slip-On Casual Shoes"]
+        sandals = ["Slides", "Flip-Flops", "Sandals"]
+        miscellanouse_shoes = ["Winter Moccasins", "Leather Shoes", "Dress Shoes", "Heels"]
+
+        full_length = ["Jeans", "Sweatpants", "Leggings", "Jeggings", "Khakis", "Long Skirt", "Cargo Pants", "Dress Pants", "Trackpants"]
+        half_length = ["Short Skirt", "Cargo Shorts", "Jean Shorts", "Athletic Shorts"]
+
+
 
         return render_template('outfits.html', city = submitted_city, result = result, randomInt = random_num, coldFootwear = cold_footwear,
         coldBottoms = cold_bottoms, coldTop = cold_top, coldAccessories = cold_accessories,
