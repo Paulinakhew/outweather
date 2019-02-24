@@ -36,7 +36,7 @@ def weather():
 
         mild_footwear = ["Running Shoes", "Dress Shoes", "Slip-On Casual Shoes", "Flip-Flops", "Heels"]
         mild_top = ["T-Shirt", "Long-Sleeve Shirt", "Light Sweatshirt", "Jean Jacket", "Dress Shirt"]
-        mild_accessories = ["Baseball Cap", "Sunglasses"]
+        mild_accessories = ["Baseball Cap", "Sunglasses", ""]
         mild_bottoms = ["Sweatpants", "Long Skirt", "Jeans", "Cargo Pants", "Dress Pants", "Leggings"]
 
         hot_footwear = ["Flip-Flops", "Sandals", "Slides", "Running Shoes", "Slip-On Casual Shoes"]
