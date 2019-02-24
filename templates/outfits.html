@@ -288,6 +288,9 @@
                             <img class = "miscellaneous-shoes" src = "static/images/miscShoes.svg">
                         {% endif %}
                     {% endfor %}
+                    {% if hotFootwear[randomInt] == "Heels" %}
+                        <img class = "heels" src = "static/images/heels.svg">
+                    {% endif %}
                 </div>
             {% elif result["Temperature"] > 10 and result["Temperature"] < 25 %}
                 <div class = "container footwear">
@@ -308,6 +311,9 @@
                             <img class = "joggers" src = "static/images/joggers.svg">
                         {% endif %}
                     {% endfor %}
+                    {% if mildFootwear[randomInt] == "Heels" %}
+                        <img class = "heels" src = "static/images/heels.svg">
+                    {% endif %}
                     {% for style in miscShoes %}
                         {% if mildFootwear[randomInt] == style %}
                             <img class = "miscellaneous-shoes" src = "static/images/miscShoes.svg">
@@ -338,6 +344,9 @@
                             <img class = "miscellaneous-shoes" src = "static/images/miscShoes.svg">
                         {% endif %}
                     {% endfor %}
+                    {% if coldFootwear[randomInt] == "Heels" %}
+                        <img class = "heels" src = "static/images/heels.svg">
+                    {% endif %}
             {% endif %}
             
                 </div>
