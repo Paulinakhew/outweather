@@ -2,18 +2,42 @@
 <head>
     <title>Outfits</title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="icon" type="image/png" sizes="16x16" href="static/images/icon.ico">
+
+    <style>
+    .background{
+        width:100%;
+    	height:900px;
+    	background: linear-gradient(to bottom, #5581F3 50%, white 50%);
+    }
+    green{
+        color:#2FB494;
+    }
+    .title{
+        font-family: 'Futura';
+        font-weight: 300;
+        font-size: 70px;
+        color:#fff;
+    }
+    </style>
 </head>
 
 <body>
-    <h1>Outfits</h1>
-    <h1>{{result}}</h1>
-    <h1>{{city}}</h1>
-    <h1>{{city}}</h1>
-    <h2>{{result["Date"]}}</h2>
-    <h2>{{result["Temperature"]}}˚C</h2>
-    <h3>{{result["Weather"]}}</h3>
-    <h3>{{result["Weather Details"]}}</h3>
-    <h3>{{result["Wind Speed"]}} km/h</h3>
+    <div class="background">
+        <div>
 
-    <h1>My Outfit</h1>
+        </div>
+        <h1 class="title">{{city}}</h1>
+        <h2>{{result["Date"]}}</h2>
+        <h2>{{result["Temperature"]}}˚C</h2>
+        <h3>{{result["Weather"]}}</h3>
+        <h3>{{result["Weather Details"]}}</h3>
+        <h3>{{result["Wind Speed"]}} km/h</h3>
+        <h1><green>My Outfits</green></h1>
+        <br>
+        <h1>My Outfit</h1>
+    </div> 
+    
+
+    
 </body>
