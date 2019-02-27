@@ -2,7 +2,7 @@
 import requests
 import random
 from datetime import datetime
-from flask_humanize import Humanize
+#from flask_humanize import Humanize
 import model as m
 
 from flask import Flask, render_template, request, redirect, session
