@@ -19,6 +19,15 @@ def website():
     else:
         return render_template('mainmenu.html')
 
+
+@app.route('/',methods=['GET'])
+def redirect_to_menu():
+    if request.method=="GET":
+        return redirect('/mainmenu')
+    else:
+        return redirect('/mainmenu')
+
+
 @app.route('/weather', methods=['GET','POST'])
 def weather():
     if request.method=="GET":
