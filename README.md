@@ -15,7 +15,7 @@ Through this application, we hope to advise users of the weather conditions and 
 [Paulina Khew](https://github.com/Paulinakhew), [Daniel Kim](https://github.com/dannyhkim), and [Ahmad Chaudhry](https://github.com/ahmadtc1) created this project while participating at Hack the Valley. Paulina created the flask app, Ahmad worked with the API from [openweathermap.org](https://openweathermap.org/api), and Daniel was in charge of the UI/UX. We all worked on the HTML/CSS as well as the python portion of the code. 
 
 ### What is Hack the Valley?
-Hack the Valley is a 36 hour hackathon at the University of Toronto Scarborough Campus.Check out their website at https://hackthevalley.io/. 
+Hack the Valley is a 36 hour hackathon at the University of Toronto Scarborough Campus. Check out their website at https://hackthevalley.io/. 
 
 ### Design
 Everything on this app was designed from scratch by [@dannyhkim](https://github.com/dannyhkim). He created the logo using Illustrator and then created a PDF of what the app was supposed to look like using Figma. Our team then used HTML and CSS to make his vision come to life! 
