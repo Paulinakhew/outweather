@@ -2,7 +2,7 @@
 import requests
 import random
 from datetime import datetime
-from flask_humanize import Humanize
+#from flask_humanize import Humanize
 import model as m
 
 from flask import Flask, render_template, request, redirect, session
@@ -18,6 +18,15 @@ def website():
         return render_template('mainmenu.html')
     else:
         return render_template('mainmenu.html')
+
+
+@app.route('/',methods=['GET'])
+def redirect_to_menu():
+    if request.method=="GET":
+        return redirect('/mainmenu')
+    else:
+        return redirect('/mainmenu')
+
 
 @app.route('/weather', methods=['GET','POST'])
 def weather():
