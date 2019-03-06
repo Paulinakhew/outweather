@@ -1,3 +1,6 @@
+[![Watch on GitHub](https://img.shields.io/github/watchers/Paulinakhew/outweather.svg?style=social)](https://github.com/Paulinakhew/outweather/watchers)
+[![Star on GitHub](https://img.shields.io/github/stars/Paulinakhew/outweather.svg?style=social)](https://github.com/Paulinakhew/outweather/stargazers)
+
 # OutWeather
 OutWeather is a web application that helps users determine what to wear and what accessories to bring with them when they go outside. 
 
