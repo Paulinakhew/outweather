@@ -1,10 +1,61 @@
-.title{
-    text-align: center;
-    font-family: Futura; 
+body{
+    padding:0 0 0 100px;
 }
-
-@font-face{
-    font-family: Futura;
+.title{
+    text-align: left;
+    font-family: 'Open Sans'; 
+    font-weight:300;
+    font-size: 50px;
+}
+@font-face {
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 300;
+    src:url(https://fonts.gstatic.com/s/opensans/v13/DXI1ORHCpsQm3Vp6mXoaTRa1RVmPjeKy21_GQJaLlJI.woff) format('woff');
+}
+blue{
+    color: #5783F3;
+}
+lightblue{
+    color:#54C1FF;
+}
+yellow{
+    color:#FCD121;
+}
+.rectangle{
+    height:8px;
+    width:26%;
+    background-color: #5783F3;
+}
+.image{
+    padding-top:50px;
+    display:block;
+}
+h3{
+    font-family:'Futura';
+    font-weight:300;
+    font-size:30px;
+}
+.send-container {
+    width: 90%;
     
-
+}
+.send-btn {
+    width: 100%;
+}
+.city-input {
+    width: 99%;
+    color: #5A85F4;
+    height: 50px;
+    margin: 5px;
+    font-size:200%;
+    font-family: 'Open Sans'; 
+    font-weight:300;
+    text-align: center;
+}
+.blue-text {
+    color: #5A85F4;
+}
+.header {
+    width:90%;
 }
