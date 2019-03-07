@@ -22,7 +22,7 @@ Through this application, we hope to advise users of the weather conditions and 
 Hack the Valley is a 36 hour hackathon at the University of Toronto Scarborough Campus. Check out their website at https://hackthevalley.io/. 
 
 ### Design
-Everything on this app was designed from scratch by [@dannyhkim](https://github.com/dannyhkim). He created the logo using Illustrator and then created a PDF of what the app was supposed to look like using Figma. Our team then used HTML and CSS to make his vision come to life! 
+Everything on this app was designed from scratch by [@dannyhkim](https://github.com/dannyhkim). He created the logo using Illustrator and then designed the user interface of the app using Figma. Our team then used HTML and CSS to make his vision come to life! 
 
 #### The future of this app
 Although we have created a basic functioning app of our idea, there are many things we can build upon to improve the UX. We hope to expand on the different types of clothing suggested, and give different outfits for men and women. If you have any suggestions, feel free to open up a GitHub issue for us! :heart:
