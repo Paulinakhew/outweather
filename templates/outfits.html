@@ -31,6 +31,13 @@
         color:#2FB494;
     }
 
+    .center {
+        text-align:center;
+        display:block;
+        margin-left:auto;
+        margin-right:auto;
+    }
+
     .title{
         float:left;
         font-family: 'Futura';
@@ -127,14 +134,19 @@
     <div class="background white-text">
         <div class="row">
             <div class="column left">
-                <bold><h3 class="futura">{{city| title}}</h3></bold>
+                <bold><h3 class="futura center">{{city| title}}</h3></bold>
+                <a href="/weather">
+                    <div>
+                        <img class="image center" src="static/images/ChangeCityBtn.png"></img>
+                    </div>
+                </a>
                 {% for state in weather %}
                     {% if result["Weather"] == state %}
-                        <img class = "weather_icon" src = "{{ "static/images/" ~ state ~ ".svg" }}" height="180px" width="180px">
+                        <img class = "weather_icon center" src = "{{ "static/images/" ~ state ~ ".svg" }}" height="180px" width="180px">
                     {% endif %}
                 {% endfor %}
 
-                <h2 style="font-size:80px;">{{result["Temperature"]}}˚C</h2>
+                <h2 style="font-size:80px;" class="center">{{result["Temperature"]}}˚C</h2>
             </div>
             <div class="column right">
                 <h3 style="font-size:50px;top:20px;">{{result["Date"]}} 12:00 PM</h3>
