@@ -2,7 +2,6 @@
 import requests
 import random
 from datetime import datetime
-#from flask_humanize import Humanize
 import model as m
 
 from flask import Flask, render_template, request, redirect, session
@@ -12,20 +11,13 @@ app.secret_key = 'paulina is cool'
 
 HUMANIZE_USE_UTC = True
 
+@app.route('/',methods=['GET'])
 @app.route('/mainmenu',methods=['GET'])
 def website():
     if request.method=="GET":
         return render_template('mainmenu.html')
     else:
         return render_template('mainmenu.html')
-
-
-@app.route('/',methods=['GET'])
-def redirect_to_menu():
-    if request.method=="GET":
-        return redirect('/mainmenu')
-    else:
-        return redirect('/mainmenu')
 
 
 @app.route('/weather', methods=['GET','POST'])
