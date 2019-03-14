@@ -17,7 +17,7 @@ Stay warm while looking cool 😎
 ### Our Team
 [Paulina Khew](https://github.com/Paulinakhew), [Daniel Kim](https://github.com/dannyhkim), and [Ahmad Chaudhry](https://github.com/ahmadtc1) created this project while participating at Hack the Valley. Paulina created the flask app, Ahmad worked with the API from [openweathermap.org](https://openweathermap.org/api), and Daniel was in charge of the UI/UX. We all worked on the HTML/CSS as well as the outfit suggestions that are generated using Python. 
 
-These are the people that made this project in aplhabetical order:
+These are the people that made this project in alphabetical order:
 
 | [@ahmadtc1][ahmadtc1-user] | [@dannyhkim][dannyhkim-user] | [@Paulinakhew][Paulinakhew-user]
 |---|---|---|
