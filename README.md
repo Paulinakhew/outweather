@@ -1,18 +1,18 @@
-
-
 # OutWeather
-OutWeather is a web application that helps users determine what to wear and what accessories to bring with them when they go outside. 
+OutWeather is a web application that helps users determine what to wear and what accessories to bring with them when they go outside. The app advises users of the weather conditions and suggest an ideal outfit so that they are prepared. We designed a clean and simple UI to make it easy to use. Users can enter their location, and the app will then proceed to display details on the weather, as well as a full outfit.
 
-## Purpose
-Through this application, we hope to advise users of the weather conditions and suggest an ideal outfit so that they are prepared for the weather conditions. We designed a clean and simple UI to make it easy to use. Users can enter their location, and the app will then proceed to display details on the weather, as well as a possible outfit to wear from top to bottom. 
+## Example Usage
+Download all necessary files:
+```ShellSession
+$ pip3 install -r requirements.txt
+```
 
-## How to run
-1. Download all necessary files by running `pip3 install -r requirements.txt`. 
-2. Run the app locally by typing in `python3 controller.py` into your terminal. Paste http://127.0.0.1:5000/mainmenu into your browser which will bring you to the home page.
-3. Click the "Get Started" button.
-4. Enter your location (city) on the second page and press "Send". 
-5. Check out your outfit on the third page. If you want a new outfit, simply refresh the page. 
-6. Wear the outfit, look super fly, and stay warm 😎
+After installing the packages, run the app locally:
+```ShellSession
+$ python3 controller.py
+``` 
+Paste http://127.0.0.1:5000 into your browser and click the "Get Started" button. Enter your city on the second page to see your outfit. If you want a new outfit, simply click the red "New Outfit" button. 
+Stay warm while looking cool 😎
 
 ### Our Team
 [Paulina Khew](https://github.com/Paulinakhew), [Daniel Kim](https://github.com/dannyhkim), and [Ahmad Chaudhry](https://github.com/ahmadtc1) created this project while participating at Hack the Valley. Paulina created the flask app, Ahmad worked with the API from [openweathermap.org](https://openweathermap.org/api), and Daniel was in charge of the UI/UX. We all worked on the HTML/CSS as well as the outfit suggestions that are generated using Python. 
