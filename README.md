@@ -1,7 +1,7 @@
 # OutWeather
 OutWeather is a web application that helps users determine what to wear and what accessories to bring with them when they go outside. The app advises users of the weather conditions and suggest an ideal outfit so that they are prepared. We designed a clean and simple UI to make it easy to use. Users can enter their location, and the app will then proceed to display details on the weather, as well as a full outfit.
 
-## Example Usage
+## Setup and Usage
 Download all necessary files:
 ```ShellSession
 $ pip3 install -r requirements.txt
@@ -15,7 +15,7 @@ Paste http://127.0.0.1:5000 into your browser and click the "Get Started" button
 Stay warm while looking cool 😎
 
 ### Our Team
-[Paulina Khew](https://github.com/Paulinakhew), [Daniel Kim](https://github.com/dannyhkim), and [Ahmad Chaudhry](https://github.com/ahmadtc1) created this project while participating at Hack the Valley. Paulina created the flask app, Ahmad worked with the API from [openweathermap.org](https://openweathermap.org/api), and Daniel was in charge of the UI/UX. We all worked on the HTML/CSS as well as the outfit suggestions that are generated using Python. 
+[Paulina Khew](https://github.com/Paulinakhew), [Daniel Kim](https://github.com/dannyhkim), and [Ahmad Chaudhry](https://github.com/ahmadtc1) created this project while participating at Hack the Valley. Paulina created the Flask app, Ahmad worked with the API from [openweathermap.org](https://openweathermap.org/api), and Daniel was in charge of the UI/UX. We all worked on the HTML/CSS as well as the outfit suggestions that are generated using Python. 
 
 These are the people that made this project in alphabetical order:
 
