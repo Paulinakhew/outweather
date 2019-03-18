@@ -40,6 +40,7 @@ Everything on this app was designed from scratch by [@dannyhkim](https://github.
 ### The future of this app
 Although we have created a fully functioning app, there are many things we can build upon to improve the UX and additional features we can add. We hope to expand on the different types of clothing suggested, and give different outfits for men and women. If you have any suggestions, feel free to open up a GitHub issue for us! :heart:
 
+### Photos
 ![Main menu](static/images/mainmenu.png?raw=true "Main menu")
 This is the main menu page. 
 
@@ -49,7 +50,7 @@ The next page is where the app prompts you to enter your city.
 ![Outfit suggestions](static/images/outfits.png?raw=true "Outfit suggestions")
 The last page is where you receive your outfit suggestions! You can even reload the page using our button to get different suggestions. 
 
-##### Watch and star this repository on GitHub!
+#### Watch and star this repository on GitHub!
 
 [![Watch on GitHub](https://img.shields.io/github/watchers/Paulinakhew/outweather.svg?style=social)](https://github.com/Paulinakhew/outweather/watchers)
 [![Star on GitHub](https://img.shields.io/github/stars/Paulinakhew/outweather.svg?style=social)](https://github.com/Paulinakhew/outweather/stargazers)
