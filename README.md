@@ -32,7 +32,7 @@ These are the people that made this project in alphabetical order:
 
 
 ### What is Hack the Valley?
-Hack the Valley is a 36 hour hackathon at the University of Toronto Scarborough Campus. Check out their website at https://hackthevalley.io/. 
+Hack the Valley is a 36 hour hackathon at the University of Toronto Scarborough Campus. Check out their menu at https://hackthevalley.io/. 
 
 ### Design
 Everything on this app was designed from scratch by [@dannyhkim](https://github.com/dannyhkim). He created the logo using Illustrator and then designed the user interface of the app using Figma. Our team then used HTML and CSS to make his vision come to life! 
