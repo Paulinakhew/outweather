@@ -9,7 +9,7 @@ Through this application, we hope to advise users of the weather conditions and 
 
 ## How to run
 1. Download all necessary files by running `pip3 install -r requirements.txt`. 
-2. Run the app locally by typing in `python3 controller.py` into your terminal. Paste `http://127.0.0.1:5000/mainmenu` into your browser which will bring you to the home page.
+2. Run the app locally by typing in `python3 controller.py` into your terminal. Paste `http://127.0.0.1:5000/menu` into your browser which will bring you to the home page.
 3. Click the "Get Started" button.
 4. Enter your location (city) on the second page and press "Send". 
 5. Check out your outfit on the third page. If you want a new outfit, simply refresh the page. 
@@ -27,7 +27,7 @@ Everything on this app was designed from scratch by [@dannyhkim](https://github.
 #### The future of this app
 Although we have created a basic functioning app of our idea, there are many things we can build upon to improve the UX. We hope to expand on the different types of clothing suggested, and give different outfits for men and women. If you have any suggestions, feel free to open up a GitHub issue for us! :heart:
 
-![Main menu](static/images/mainmenu.png?raw=true "Main menu")
+![Main menu](static/images/menu.png?raw=true "Main menu")
 
 ![Enter city page](static/images/weather.png?raw=true "Enter city page")
 
