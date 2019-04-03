@@ -3,35 +3,7 @@
     <head>
         <title>Main Menu</title>
         <link rel="icon" type="image/png" sizes="16x16" href="static/images/icon.ico">
-        <style>
-            .get-started {
-                display: block;
-                position:center;
-                width: 25%;
-                height: auto;
-                text-align: center;
-                margin-left: auto;
-                margin-right: auto;
-            }
-
-            .background {
-                width:100%;
-                display: block;
-                left:0px;
-                top:0px;
-                z-index: -1;
-                position: absolute;
-            }
-
-            .button-container {
-                padding-top: 60%;
-                margin: auto;
-                text-align: center;
-                display: block;
-                width: 100%;
-            }
-
-        </style>
+        <link rel="stylesheet" href="{{ url_for('static', filename='menu.css') }}">
     </head>
     <body>
         <img class='background' src='static/images/welcome.png'>
