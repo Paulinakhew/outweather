@@ -40,13 +40,9 @@ Everything on this app was designed from scratch by [@dannyhkim](https://github.
 ### The future of this app
 Although we have created a fully functioning app, there are many things we can build upon to improve the UX and additional features we can add. We hope to expand on the different types of clothing suggested, and give different outfits for men and women. If you have any suggestions, feel free to open up a GitHub issue for us! :heart:
 
-<<<<<<< HEAD
-![Main menu](static/images/menu.png?raw=true "Main menu")
-=======
 ### Photos
 ![Main menu](static/images/mainmenu.png?raw=true "Main menu")
 This is the main menu page. 
->>>>>>> efe0309bf44a5f45a7ed04b787be281856943dfc
 
 ![Enter city page](static/images/weather.png?raw=true "Enter city page")
 The next page is where the app prompts you to enter your city. 
