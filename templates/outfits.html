@@ -175,18 +175,18 @@
                             {% if hotAccessories[randomInt] == "Parasol" %}
                                 <img class = "accessories clothes" src = "static/images/parasol.svg">
                             {% else %}
-                            <img class = "accessories clothes" src = "static/images/accessorieshot.svg">
+                                <img class = "accessories clothes" src = "static/images/accessorieshot.svg">
                             {% endif %}
                             <h4>{{hotAccessories[randomInt]}}</h4>
-                    {% elif result["Temperature"] > 10 and result["Temperature"] < 25 %}
+                        {% elif result["Temperature"] > 10 and result["Temperature"] < 25 %}
                             <h1>Accessories</h1>
                             {% if mildAccessories[randomInt] == "Parasol" %}
                                 <img class = "accessories clothes" src = "static/images/parasol.svg">
                             {% else %}
-                            <img class = "accessories clothes" src = "static/images/accessoriesmild.svg">
+                                <img class = "accessories clothes" src = "static/images/accessoriesmild.svg">
                             {% endif %}
                             <h4>{{mildAccessories[randomInt]}}</h4>
-                    {% elif result["Temperature"] < 10 %}
+                        {% elif result["Temperature"] < 10 %}
                             <h1>Accessories</h1>
                             {% if coldAccessories[randomInt] == "Mittens" or coldAccessories[randomInt] == "Gloves" %}
                                 <img class = "accessories clothes" src = "static/images/mittens.svg">
@@ -196,100 +196,99 @@
                                 <img class = "accessories clothes" src = "static/images/accessoriescold.svg">
                             {% endif %}
                             <h4>{{coldAccessories[randomInt]}}</h4>
-                    {% endif %}
+                        {% endif %}
                     </div>
-                    
+
                     <div class="card4">
                         {% if result["Temperature"]>25 %}
-                        <h1>Footwear</h1>
-                        {% for style in bootsIcon %}
-                            {% if hotFootwear[randomInt] == style %}
-                                <img class = "boots clothes" src = "static/images/boots.svg">
+                            <h1>Footwear</h1>
+                            {% for style in bootsIcon %}
+                                {% if hotFootwear[randomInt] == style %}
+                                    <img class = "boots clothes" src = "static/images/boots.svg">
+                                {% endif %}
+                            {% endfor %}
+                            {% for style in sandalsIcon %}
+                                {% if hotFootwear[randomInt] == style %}
+                                    <img class = "sandals clothes" src = "static/images/sandals.svg">
+                                {% endif %}
+                            {% endfor %}
+                            {% for style in joggersIcon %}
+                                {% if hotFootwear[randomInt] == style %}
+                                    <img class = "joggers clothes" src = "static/images/joggers.svg">
+                                {% endif %}
+                            {% endfor %}
+                            {% for style in miscShoes %}
+                                {% if hotFootwear[randomInt] == style %}
+                                    <img class = "miscellaneous clothes" src = "static/images/miscShoes.svg">
+                                {% endif %}
+                            {% endfor %}
+                            {% if hotFootwear[randomInt] == "Heels" %}
+                                <img class = "sandals clothes" src = "static/images/heels.svg">
                             {% endif %}
-                        {% endfor %}
-                        {% for style in sandalsIcon %}
-                            {% if hotFootwear[randomInt] == style %}
-                                <img class = "sandals clothes" src = "static/images/sandals.svg">
-                            {% endif %}
-                        {% endfor %}
-                        {% for style in joggersIcon %}
-                            {% if hotFootwear[randomInt] == style %}
-                                <img class = "joggers clothes" src = "static/images/joggers.svg">
-                            {% endif %}
-                        {% endfor %}
-                        {% for style in miscShoes %}
-                            {% if hotFootwear[randomInt] == style %}
-                                <img class = "miscellaneous clothes" src = "static/images/miscShoes.svg">
-                            {% endif %}
-                        {% endfor %}
-                        {% if hotFootwear[randomInt] == "Heels" %}
-                            <img class = "sandals clothes" src = "static/images/heels.svg">
-                        {% endif %}
-                        <h4>{{hotFootwear[randomInt]}}</h4>
+                            <h4>{{hotFootwear[randomInt]}}</h4>
 
-                {% elif result["Temperature"] > 10 and result["Temperature"] < 25 %}
-                    <div class = "container footwear">
-                        <h1>Footwear</h1>
-                        {% for style in bootsIcon %}
-                            {% if mildFootwear[randomInt] == style %}
-                                <img class = "boots clothes" src = "static/images/boots.svg">
-                            {% endif %}
-                        {% endfor %}
-                        {% for style in sandalsIcon %}
-                            {% if mildFootwear[randomInt] == style %}
-                                <img class = "sandals clothes" src = "static/images/sandals.svg">
-                            {% endif %}
-                        {% endfor %}
-                        {% for style in joggersIcon %}
-                            {% if mildFootwear[randomInt] == style %}
-                                <img class = "joggers clothes" src = "static/images/joggers.svg">
-                            {% endif %}
-                        {% endfor %}
-                        {% if mildFootwear[randomInt] == "Heels" %}
-                            <img class = "sandals clothes" src = "static/images/heels.svg">
+                        {% elif result["Temperature"] > 10 and result["Temperature"] < 25 %}
+                            <div class = "container footwear">
+                                <h1>Footwear</h1>
+                                {% for style in bootsIcon %}
+                                    {% if mildFootwear[randomInt] == style %}
+                                        <img class = "boots clothes" src = "static/images/boots.svg">
+                                    {% endif %}
+                                {% endfor %}
+                                {% for style in sandalsIcon %}
+                                    {% if mildFootwear[randomInt] == style %}
+                                        <img class = "sandals clothes" src = "static/images/sandals.svg">
+                                    {% endif %}
+                                {% endfor %}
+                                {% for style in joggersIcon %}
+                                    {% if mildFootwear[randomInt] == style %}
+                                        <img class = "joggers clothes" src = "static/images/joggers.svg">
+                                    {% endif %}
+                                {% endfor %}
+                                {% if mildFootwear[randomInt] == "Heels" %}
+                                    <img class = "sandals clothes" src = "static/images/heels.svg">
+                                {% endif %}
+                                {% for style in miscShoes %}
+                                    {% if mildFootwear[randomInt] == style %}
+                                        <img class = "miscellaneous-shoes clothes" src = "static/images/miscShoes.svg">
+                                    {% endif %}
+                                {% endfor %}
+                                <h4>{{mildFootwear[randomInt]}}</h4>
+                        {% elif result["Temperature"] < 10 %}
+                            <div class = "container footwear">
+                                <h1>Footwear</h1>
+                                {% for style in bootsIcon %}
+                                    {% if coldFootwear[randomInt] == style %}
+                                        <img class = "boots clothes" src = "static/images/boots.svg">
+                                    {% endif %}
+                                {% endfor %}
+                                {% for style in sandalsIcon %}
+                                    {% if coldFootwear[randomInt] == style %}
+                                        <img class = "sandals clothes" src = "static/images/sandals.svg">
+                                    {% endif %}
+                                {% endfor %}
+                                {% for style in joggersIcon %}
+                                    {% if coldFootwear[randomInt] == style %}
+                                        <img class = "joggers clothes" src = "static/images/joggers.svg">
+                                    {% endif %}
+                                {% endfor %}
+                                {% for style in miscShoes %}
+                                    {% if coldFootwear[randomInt] == style %}
+                                        <img class = "miscellaneous-shoes clothes" src = "static/images/miscShoes.svg">
+                                    {% endif %}
+                                {% endfor %}
+                                {% if coldFootwear[randomInt] == "Heels" %}
+                                    <img class = "sandals clothes" src = "static/images/heels.svg">
+                                {% endif %}
+                                <h4>{{coldFootwear[randomInt]}}</h4>
                         {% endif %}
-                        {% for style in miscShoes %}
-                            {% if mildFootwear[randomInt] == style %}
-                                <img class = "miscellaneous-shoes clothes" src = "static/images/miscShoes.svg">
-                            {% endif %}
-                        {% endfor %}
-                        <h4>{{mildFootwear[randomInt]}}</h4>
 
-                    
-                {% elif result["Temperature"] < 10 %}
-                    <div class = "container footwear">
-                        <h1>Footwear</h1>
-                        {% for style in bootsIcon %}
-                            {% if coldFootwear[randomInt] == style %}
-                                <img class = "boots clothes" src = "static/images/boots.svg">
-                            {% endif %}
-                        {% endfor %}
-                        {% for style in sandalsIcon %}
-                            {% if coldFootwear[randomInt] == style %}
-                                <img class = "sandals clothes" src = "static/images/sandals.svg">
-                            {% endif %}
-                        {% endfor %}
-                        {% for style in joggersIcon %}
-                            {% if coldFootwear[randomInt] == style %}
-                                <img class = "joggers clothes" src = "static/images/joggers.svg">
-                            {% endif %}
-                        {% endfor %}
-                        {% for style in miscShoes %}
-                            {% if coldFootwear[randomInt] == style %}
-                                <img class = "miscellaneous-shoes clothes" src = "static/images/miscShoes.svg">
-                            {% endif %}
-                        {% endfor %}
-                        {% if coldFootwear[randomInt] == "Heels" %}
-                            <img class = "sandals clothes" src = "static/images/heels.svg">
-                        {% endif %}
-                        <h4>{{coldFootwear[randomInt]}}</h4>
-                {% endif %}
                     </div>
-                    </div>
+                </div>
+                <br>
             </div>
             <br>
+            <br>
         </div>
-        <br>
-        <br>
     </body>
 </html>
