@@ -1,5 +1,4 @@
 #!usr/bin/env python3
-import requests
 import random
 from datetime import datetime
 import model as m
