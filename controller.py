@@ -7,7 +7,7 @@ import model as m
 from flask import Flask, render_template, request, redirect, session
 
 app = Flask(__name__)
-app.secret_key = 'paulina is cool'
+app.secret_key = 'daniel is cool'
 
 HUMANIZE_USE_UTC = True
 
