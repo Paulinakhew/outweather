@@ -1,0 +1,122 @@
+.background{
+    width:100%;
+    height:auto;
+    min-height: 100px;
+    background-color: #5581F3;
+    box-shadow:0 5px 15px 0 rgba(0,0,0,.18),
+            0 5px 12px 0 rgba(218, 199, 199, 0.12);
+    display:block;
+    z-index:-1;
+    right:0px;
+    left:0px;
+}
+.white-text {
+    color:white;
+    font-family: 'Heiti SC';
+}
+.background-color {
+    background-color:#5581F3;
+    display:block;
+    width:100%;
+}
+
+green{
+    color:#2FB494;
+}
+
+.center {
+    text-align:center;
+    display:block;
+    margin-left:auto;
+    margin-right:auto;
+}
+
+.title{
+    float:left;
+    font-family: 'Futura';
+    font-weight: 300;
+    font-size: 70px;
+    color:white;
+}
+.date{
+    float:right;
+    font-family: 'Futura';
+    font-weight: 300;
+    font-size:70px;
+    color:white;
+}
+.column {
+    float:left;
+    padding:20px;
+    height: 500px;
+}
+.left {
+    max-width: 35%;
+    margin: 2%;
+    padding-right: 3%;
+}
+.right {
+    max-width: 55%;
+    margin: 2%;
+    padding-left: 3%;
+    
+}
+.row:after {
+    content:"";
+    display: table;
+    clear:both;
+}
+.font-60 {
+    font-size: 60px;
+}
+.weather_icon{
+    fill:white;
+}
+.left1 {
+    width: 34%;
+}
+.middlecol{
+    width: 31%;
+    text-align: center;
+}
+.right1 {
+    width: 31%;
+    text-align: center;
+    right:0px;
+}
+.clothes {
+    height: 80px;
+    width: 80px;
+}
+.card1 {
+    background-color: #5581f3;
+}
+.card2 {
+    background-color: #2FB494;
+}
+.card3 {
+    background-color: #FCD121;
+}
+.card4 {
+    background-color: #5581f3;
+    right: 0px;
+}
+.card1, .card2, .card3, .card4 {
+    border-radius: 15px;
+    margin:6% 3%;
+    box-shadow:0 5px 15px 0 rgba(0,0,0,.18),
+            0 5px 12px 0 rgba(218, 199, 199, 0.12);
+}
+
+.font1 {
+    font-family: 'Heiti SC';
+}
+.futura {
+    font-family: 'Futura';
+    font-weight: 200;
+    font-size:90px;
+}
+.card-cols {
+    width: 100%;
+    margin: 2%;
+}

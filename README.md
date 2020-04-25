@@ -15,7 +15,7 @@ Paste http://127.0.0.1:5000 into your browser and click the "Get Started" button
 Stay warm while looking cool 😎
 
 ### Our Team
-[Paulina Khew](https://github.com/Paulinakhew), [Daniel Kim](https://github.com/dannyhkim), and [Ahmad Chaudhry](https://github.com/ahmadtc1) created this project while participating at Hack the Valley. Paulina created the Flask app, Ahmad worked with the API from [openweathermap.org](https://openweathermap.org/api), and Daniel was in charge of the UI/UX. We all worked on the HTML/CSS as well as the outfit suggestions that are generated using Python. 
+[Paulina Khew](https://github.com/Paulinakhew), [Daniel Kim](https://github.com/dannyhkim), and [Ahmad Chaudhry](https://github.com/ahmadtc1) created this project while participating at [Hack the Valley](https://hackthevalley.io/). Paulina created the Flask app, Ahmad worked with the API from [openweathermap.org](https://openweathermap.org/api), and Daniel was in charge of the UI/UX. We all worked on the HTML/CSS as well as the outfit suggestions that are generated using Python. 
 
 These are the people that made this project in alphabetical order:
 
@@ -32,7 +32,7 @@ These are the people that made this project in alphabetical order:
 
 
 ### What is Hack the Valley?
-Hack the Valley is a 36 hour hackathon at the University of Toronto Scarborough Campus. Check out their website at https://hackthevalley.io/. 
+Hack the Valley is a 36 hour hackathon at the University of Toronto Scarborough Campus. Check out their menu at https://hackthevalley.io/. 
 
 ### Design
 Everything on this app was designed from scratch by [@dannyhkim](https://github.com/dannyhkim). He created the logo using Illustrator and then designed the user interface of the app using Figma. Our team then used HTML and CSS to make his vision come to life! 
@@ -40,6 +40,7 @@ Everything on this app was designed from scratch by [@dannyhkim](https://github.
 ### The future of this app
 Although we have created a fully functioning app, there are many things we can build upon to improve the UX and additional features we can add. We hope to expand on the different types of clothing suggested, and give different outfits for men and women. If you have any suggestions, feel free to open up a GitHub issue for us! :heart:
 
+### Photos
 ![Main menu](static/images/mainmenu.png?raw=true "Main menu")
 This is the main menu page. 
 
@@ -49,7 +50,7 @@ The next page is where the app prompts you to enter your city.
 ![Outfit suggestions](static/images/outfits.png?raw=true "Outfit suggestions")
 The last page is where you receive your outfit suggestions! You can even reload the page using our button to get different suggestions. 
 
-##### Watch and star this repository on GitHub!
+#### Watch and star this repository on GitHub!
 
 [![Watch on GitHub](https://img.shields.io/github/watchers/Paulinakhew/outweather.svg?style=social)](https://github.com/Paulinakhew/outweather/watchers)
 [![Star on GitHub](https://img.shields.io/github/stars/Paulinakhew/outweather.svg?style=social)](https://github.com/Paulinakhew/outweather/stargazers)

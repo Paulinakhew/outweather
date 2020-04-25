@@ -1,10 +1,9 @@
 #!usr/bin/env python3
-import requests
 import random
 from datetime import datetime
 import model as m
 
-from flask import Flask, render_template, request, redirect, session
+from flask import Flask, render_template, request, redirect, session, url_for
 
 app = Flask(__name__)
 app.secret_key = 'daniel is cool'
@@ -12,12 +11,12 @@ app.secret_key = 'daniel is cool'
 HUMANIZE_USE_UTC = True
 
 @app.route('/',methods=['GET'])
-@app.route('/mainmenu',methods=['GET'])
-def website():
+@app.route('/menu',methods=['GET'])
+def menu():
     if request.method=="GET":
-        return render_template('mainmenu.html')
+        return render_template('menu.html')
     else:
-        return render_template('mainmenu.html')
+        return render_template('menu.html')
 
 
 @app.route('/weather', methods=['GET','POST'])
@@ -38,7 +37,6 @@ def weather():
 @app.route('/outfits', methods=['GET','POST'])
 def outfits():
     if request.method=="GET":
-    
         submitted_city = session.get('submitted_city', None)
         result = m.getWeather(submitted_city)
         random.seed(datetime.now())
@@ -73,7 +71,6 @@ def outfits():
 
         weather = ["Thunderstorm", "Drizzle", "Rain", "Snow", "Atmosphere", "Clear", "Clouds"]
 
-
         return render_template('outfits.html', city = submitted_city, result = result, randomInt = random_num, coldFootwear = cold_footwear,
         coldBottoms = cold_bottoms, coldTop = cold_top, coldAccessories = cold_accessories,
         mildFootwear = mild_footwear, mildTop = mild_top, mildAccessories = mild_accessories, mildBottoms = mild_bottoms,
@@ -81,6 +78,7 @@ def outfits():
         jacketsIcon = jackets, tShirtIcon = t_shirt, longSleeveIcon = long_sleeve_shirt, bootsIcon = boots,
         joggersIcon = joggers, sandalsIcon = sandals, miscShoes = miscellanouse_shoes, weather = weather, longPants = full_length,
         shortPants = half_length)
+
     else:
         submitted_city = session.get('submitted_city', None)
         result = m.getWeather(submitted_city)
@@ -116,7 +114,6 @@ def outfits():
 
         weather = ["Thunderstorm", "Drizzle", "Rain", "Snow", "Atmosphere", "Clear", "Clouds"]
 
-
         return render_template('outfits.html', city = submitted_city, result = result, randomInt = random_num, coldFootwear = cold_footwear,
         coldBottoms = cold_bottoms, coldTop = cold_top, coldAccessories = cold_accessories,
         mildFootwear = mild_footwear, mildTop = mild_top, mildAccessories = mild_accessories, mildBottoms = mild_bottoms,
@@ -124,7 +121,6 @@ def outfits():
         jacketsIcon = jackets, tShirtIcon = t_shirt, longSleeveIcon = long_sleeve_shirt, bootsIcon = boots,
         joggersIcon = joggers, sandalsIcon = sandals, miscShoes = miscellanouse_shoes, halfBottomsIcon = half_length,
         fullBottomsIcon = full_length, weather = weather)
-
 
 
 if __name__ == '__main__':
